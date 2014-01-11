@@ -30,9 +30,9 @@ if(!(defined('ABSPATH'))){
 class settings {
 
     //About (put your product's info here)
-    public $product_name                            =   '';   //Your product name here
-    public $version                                 =   '';   //Your version here
-    public $version_type                            =   '';   //Your version type here
+    public $product_name                            =   'CloudBurst';   //Your product name here
+    public $version                                 =   '0.0.2';   //Your version here
+    public $version_type                            =   'pre-alpha';   //Your version type here
 
     //About Foundation Framework
     public $foundation_product_name                 =   'Foundation Framework';    //Defines the name of the foundation framework
@@ -49,7 +49,7 @@ class settings {
     public $theme                                   =   'cloudburst';                 //Sets the theme
     public $plugins                                 =   true;                      //Enables optional plugins
     public $debug                                   =   true;                      //Enables debugging
-    public $page_title                              =   'Foundation Framework';    //Page title
+    public $page_title                              =   'CloudBurst';    //Page title
 
     //Constructor
     public function __construct(){

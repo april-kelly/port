@@ -26,7 +26,7 @@
       <file leaf-file-name="settings.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/models/settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="67" selection-start="2186" selection-end="2186" vertical-scroll-proportion="0.8292683" vertical-offset="0" max-vertical-offset="1938">
+            <state line="36" column="32" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.30846485" vertical-offset="159" max-vertical-offset="1938">
               <folding />
             </state>
           </provider>
@@ -42,8 +42,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/includes/models/settings.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/config/theme_config.php" />
+        <option value="$PROJECT_DIR$/includes/models/settings.php" />
       </list>
     </option>
   </component>
@@ -159,36 +159,6 @@
               <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudburst" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="port" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -261,7 +231,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/models/settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="67" selection-start="2186" selection-end="2186" vertical-scroll-proportion="0.8292683" vertical-offset="0" max-vertical-offset="1938">
+        <state line="36" column="32" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.30846485" vertical-offset="159" max-vertical-offset="1938">
           <folding />
         </state>
       </provider>
