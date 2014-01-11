@@ -46,7 +46,7 @@ class settings {
     //General Settings
     public $mlp                                     =   "\x61\x77\x65\x73\x6F\x6d\x65";   //Deal with it, ponies are awesome
     public $ponify                                  =   false;                     //Ponifys the application if implemented
-    public $theme                                   =   'default';                 //Sets the theme
+    public $theme                                   =   'cloudburst';                 //Sets the theme
     public $plugins                                 =   true;                      //Enables optional plugins
     public $debug                                   =   true;                      //Enables debugging
     public $page_title                              =   'Foundation Framework';    //Page title
