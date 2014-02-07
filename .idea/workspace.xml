@@ -32,15 +32,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/users.php">
+      <file leaf-file-name="debug.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/debug.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="0" selection-start="3941" selection-end="3941" vertical-scroll-proportion="0.85365856" vertical-offset="833" max-vertical-offset="1530">
+            <state line="64" column="34" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.9268293" vertical-offset="442" max-vertical-offset="1428">
               <folding>
                 <element signature="e#7#609#0" expanded="true" />
-                <element signature="tag#div#1" expanded="false" />
-                <element signature="tag#div#2" expanded="false" />
+                <marker date="1391755185607" expanded="true" signature="1806:1825" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/status.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="213" selection-end="411" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="391">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,11 +80,11 @@
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/kill_direct.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/home.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/debug.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/status.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/users.php" />
+        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/debug.php" />
       </list>
     </option>
   </component>
@@ -207,6 +215,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="port" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloudburst" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -634,20 +672,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/debug.php">
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="780" selection-end="780" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="731">
+        <state line="72" column="6" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.5609756" vertical-offset="153" max-vertical-offset="850">
           <folding>
             <element signature="e#7#609#0" expanded="true" />
-            <marker date="1391751233151" expanded="false" signature="-1:-1" placeholder="..." />
+            <element signature="tag#div#0" expanded="false" />
+            <element signature="tag#div#1" expanded="false" />
+            <element signature="tag#div#2" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/status.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="173" selection-end="173" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="391">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,13 +691,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/users.php">
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/status.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="0" selection-start="3941" selection-end="3941" vertical-scroll-proportion="0.85365856" vertical-offset="833" max-vertical-offset="1530">
+        <state line="12" column="0" selection-start="213" selection-end="411" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/debug.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="34" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.9268293" vertical-offset="442" max-vertical-offset="1428">
           <folding>
             <element signature="e#7#609#0" expanded="true" />
-            <element signature="tag#div#1" expanded="false" />
-            <element signature="tag#div#2" expanded="false" />
+            <marker date="1391755185607" expanded="true" signature="1806:1825" placeholder="..." />
           </folding>
         </state>
       </provider>

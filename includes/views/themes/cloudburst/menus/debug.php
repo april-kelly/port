@@ -26,7 +26,48 @@
 ?>
 
 <p>
+
+    Welcome to <?php echo $settings['product_name']; ?>
+    <?php echo $settings['version']; ?>
+    <?php echo $settings['version_type']; ?>!
+    <br />
+
+    Powered by The <?php echo $settings['foundation_product_name']; ?>
+    version <?php echo $settings['foundation_version']; ?>
+    <?php echo $settings['foundation_version_type']; ?>.
+    <br />
+
+    <hr />
+    <b>Extended release info</b>
+    <pre>
+    P-Series release:       Yes<br />
+    Ponification:           Disabled<br />
+    Release type:           Pre-Alpha<br />
+    Debugging:              Enabled<br />
+    Developer tools:        Enabled<br />
+    </pre>
+
+    <hr />
+    <b>Settings Dump</b><br /><br />
+
+    <b>JSON: </b>
+        <pre>
+
+            <?php
+
+                echo file_get_contents(ABSPATH.'includes/data/settings.json');
+
+            ?>
+
+        </pre>
+    <br />
+
+    <b>Key-Value Pairs: </b><br />
+
+
     <?php
+
+
 
     foreach($settings as $key => $value){
         echo '<span style="text-align: left;">'.$key.'</span>';
