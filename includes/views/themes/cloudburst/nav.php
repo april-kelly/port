@@ -34,7 +34,7 @@ if(isset($_SESSION['user_id'])){
 </div>
 <div id="nav-right">
     <ul>
-        <li><a id="ul-right" href="?p=logout">Hi, <?php echo $name;?></a></li>
+        <li><a id="ul-right" href="./logout">Hi, <?php echo $name;?></a></li>
     </ul>
 </div>
 

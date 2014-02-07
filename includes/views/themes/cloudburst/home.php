@@ -1,3 +1,3 @@
 <?php
 
-echo 'This is the page being requested';
+echo 'This is the home page';

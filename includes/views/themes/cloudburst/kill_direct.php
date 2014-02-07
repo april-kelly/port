@@ -17,22 +17,35 @@
  */
  
  /**
- * Name:        Login Form
- * Description: Form user fills out to login
+ * Name:        Kill Direct
+ * Description: Redirects user attempts to directly access a page
  * Date:        2/6/14
  * Programmer:  Liam Kelly
  */
 
-?>
-<p>
-    <img src="./includes/views/themes/<?php echo $theme->dir_name ?>/images/logo.svg" width="200px" /><br />
-    <form action="./includes/views/themes/<?php echo $theme->dir_name ?>/login.php" method="post">
-        <label for="username">Username: </label>
-        <input type="text" name="username" />
-        <br />
-        <label for="password">Password: </label>
-        <input type="password" name="password" />
-        <br />
-        <input type="submit" value="login" />
-    </form>
-</p>
+//Includes
+if(!(defined('ABSPATH'))){
+    require_once('../../../../path.php');
+}
+require_once(ABSPATH.'includes/models/users.php');
+require_once(ABSPATH.'includes/models/settings.php');
+
+//Fetch settings
+$set = new settings;
+$settings = $set->fetch();
+
+/*
+ * On all theme pages The $page variable should be set
+ * if the user is accessing the page via index.php.
+ * So we check for an unset $page variable and redirect
+ * the user if unset.
+*/
+
+
+
+//Check for unset $page variable
+if(!(isset($page))){
+
+    header('Location: '.$settings['url']);
+
+}

@@ -1,5 +1,8 @@
 <?php
 
+    //Prevent direct access
+    require_once(dirname(__FILE__).'/kill_direct.php');
+
     //Load the theme configuration
     include_once(dirname(__FILE__).'/config/theme_config.php');
     $theme = new theme_config;
@@ -8,15 +11,16 @@
     if(!(empty($page['parameters']))){
 
         //Additional Parameters were set
-        $parameters = json_decode($page['parameters']);
+        $parameters = (array) json_decode($page['parameters']);
 
     }else{
 
         //Additional Parameters were NOT set
-        $parameters;
+        $parameters = false;
     }
-$message = '<b>Error: </b> This is a message!';
-//var_dump($parameters);
+
+
+
 ?>
 <html>
 
@@ -39,15 +43,26 @@ $message = '<b>Error: </b> This is a message!';
 
     <body>
 
+
+        <?php
+
+            //Allow disabling of the nav bar
+            if(!(isset($parameters['nav'])) || $parameters['nav'] == true){
+
+        ?>
         <div id="nav">
 
             <?php
 
-                include_once(ABSPATH.'includes/views/themes/'.$theme->dir_name.'/nav.php');
+            include_once(ABSPATH.'includes/views/themes/'.$theme->dir_name.'/nav.php');
 
             ?>
 
         </div>
+
+        <?php
+        }
+        ?>
 
         <?php
             if(isset($message)){

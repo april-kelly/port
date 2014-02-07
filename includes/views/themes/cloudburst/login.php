@@ -30,10 +30,10 @@ if(!(isset($_SESSION))){
 
 //Includes
 if(!(defined('ABSPATH'))){
-    require_once('./path.php');
+    require_once('../../../../path.php');
 }
-require_once(ABSPATH.'includes/models/pdo.php');
 require_once(ABSPATH.'includes/models/users.php');
+require_once(ABSPATH.'includes/models/settings.php');
 
 //Setup users class
 $users = new users;
@@ -49,16 +49,17 @@ if(isset($_REQUEST['username']) && $_REQUEST['password']){
         $users->setup_session();
 
         //Send user to home page
-        header('location: ./');
+        header('location: '.$settings['url']);
 
     }else{
 
         //Failure
 
         //Send the user back to the login form
-        //header('location: '.$_SESSION['last_page']);
+        header('location: '.$_SESSION['last_page']);
 
         echo 'failed';
+
 
     }
 
