@@ -17,14 +17,3 @@
         <?php echo $settings['foundation_version_type']; ?>.
     </em>
 </p>
-<p>
-    <?php
-
-    foreach($settings as $key => $value){
-        echo '<span style="text-align: left;">'.$key.'</span>';
-        echo '<span style="text-align: center;"> => </span>';
-        echo '<span style="text-align: right;">'.$value.'</span>';
-        echo '<br/>';
-    }
-    ?>
-</p>

@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="debug.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="debug.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/debug.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="4" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.902439" vertical-offset="0" max-vertical-offset="731">
+            <state line="29" column="0" selection-start="780" selection-end="780" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="731">
               <folding>
                 <element signature="e#7#609#0" expanded="true" />
                 <marker date="1391751233151" expanded="false" signature="914:933" placeholder="..." />
@@ -44,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="31" selection-start="730" selection-end="730" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="799">
+            <state line="11" column="26" selection-start="363" selection-end="363" vertical-scroll-proportion="0.2682927" vertical-offset="0" max-vertical-offset="799">
               <folding />
             </state>
           </provider>
@@ -114,8 +114,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/status.php" />
-        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/debug.php" />
+        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php" />
       </list>
     </option>
   </component>
@@ -673,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="730" selection-end="730" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="334" column="21" selection-start="4704" selection-end="4704" vertical-scroll-proportion="-18.961538" vertical-offset="5185" max-vertical-offset="5882">
@@ -689,11 +682,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/debug.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="4" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.902439" vertical-offset="0" max-vertical-offset="731">
+        <state line="29" column="0" selection-start="780" selection-end="780" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="731">
           <folding>
             <element signature="e#7#609#0" expanded="true" />
             <marker date="1391751233151" expanded="false" signature="914:933" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="26" selection-start="363" selection-end="363" vertical-scroll-proportion="0.2682927" vertical-offset="0" max-vertical-offset="799">
+          <folding />
         </state>
       </provider>
     </entry>
