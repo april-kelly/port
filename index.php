@@ -153,13 +153,14 @@ ob_start();
 
     }
 
+    //Time Debugging
+    $end_time = microtime(true);
+    $time = $end_time - $start_time;
+    $message = '<b>Info:</b> Page built in: '.$time.' sec.';
+
     //Include the view
     include_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/main.template.php');
 
-//Time Debugging
-$end_time = microtime(true);
-$time = $end_time - $start_time;
-echo 'Page built in: '.$time.' sec.';
 
 //Conclude output buffer
 $ob = ob_get_contents();
