@@ -3,11 +3,13 @@
         <ul>
         <li><a href="./status">Status</a></li>
         <li><a href="">General</a></li>
-        <li><a href="">Users</a></li>
+        <li><a href="./users">Users</a></li>
         <li><a href="">TV</a></li>
         <li><a href="">Library</a></li>
 
         <?php if($settings['debug'] == true){ ?>
+            <br />
+            <li><a href="./pages">Pages</a></li>
             <li><a href="./debug">Debug</a></li>
             <li><a href="./developer">Developer</a></li>
         <?php } ?>

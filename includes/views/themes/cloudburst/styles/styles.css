@@ -339,3 +339,9 @@ For system messages
     padding-right: 3px;
     padding-left: 10px;
 }
+
+.form{
+    margin-left: 10%;
+    width: 400px;
+    height: 200px;
+}
