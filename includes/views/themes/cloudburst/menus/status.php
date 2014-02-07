@@ -6,8 +6,6 @@
     <?php echo $settings['version_type']; ?>!
     <br />
 
-    <a href="./video" class="button">Videos</a>
-
 </p>
 <hr />
 <p class="info">
