@@ -28,27 +28,12 @@
 header($_SERVER['SERVER_PROTOCOL'].'505 Internal Server Error');
 
 ?>
-<html>
 
-    <head>
-
-        <title>Error 505 | <?php echo $settings['page_title']; ?></title>
-
-        <link href="./includes/views/themes/<?php echo $theme->dir_name ?>/styles/styles.css" rel="stylesheet"/>
-
-    </head>
-
-    <body>
-
-        <h1>505, Internal Server Error</h1>
+        <h3>505, Internal Server Error</h3>
         <p>
-            <h3>We are having some issues with our service right now. Please come back later.</h3>
+            We are having some issues with our service right now. Please come back later.<br />
             <img src="./includes/views/themes/<?php echo $theme->dir_name; ?>/images/derpy.png" alt="Derpy Hooves" title="Derpy Hooves"/>
             <br/>If you see this pony, tell her a datacenter is no place for muffins.<br />
-            Please not I do not hold the copyright for this image, credit goes to <a href="http://www.deviantart.com/art/Derpy-404-326148742">aman692</a> on DeviantArt.
+            Please note I do not hold the copyright for this image, credit goes to <a href="http://www.deviantart.com/art/Derpy-404-326148742">aman692</a> on DeviantArt.
         </p>
-
-    </body>
-
-</html>
 

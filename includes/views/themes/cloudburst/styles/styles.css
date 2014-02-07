@@ -1,37 +1,341 @@
 body{
-
+    background-color: dimgray;
+    background-image:url('http://localhost/port/includes/views/themes/cloudburst/images/noise-light-grey.jpg');
+    background-repeat: repeat;
     text-align: center;
+    min-width: 750px;
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+}
+
+#player{
+    background: darkgray;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+#footer{
+    color: #888;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/*
+For the home page:
+*/
+
+#main{
+    margin-left: auto;
+    margin-right: auto;
+    color: #bbb;
+}
+
+
+/*
+For the video player page
+*/
+
+
+#video {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dbdbdb;
+    width: 96%;
+    min-height: 90%;
+    border: 1px solid #bababa;
+}
+#details{
+
+    text-align: left;
+    padding: 10px;
+    width: 35%;
+    float: right;
 
 }
 
-#nav {
+@media only screen and (width: 1000px){
+    #details {
+        float: right;
+        color: pink;
+    }
+}
 
-    background-color: lightgray;
+
+@media only screen and (width: 850px){
+    #details {
+        float: left;
+        color: green;
+    }
+}
+
+#container{
+    padding: 30px;
+    float: left;
+    width: 50%;
+
+}
+#container video {
+    box-shadow: 5px 5px 24px #888;
+}
+
+
+
+/*
+For the live tv page
+*/
+
+#live{
+
+    margin-top: 8px;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
-    padding: 10px;
+    width: 900px;
+    background-color: #bbb;
+    box-shadow: 0 5px 24px #111;
 
 }
 
-#main {
+#live iframe {
 
-    background-color: lightgray;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    width: 70%;
-    padding: 10px;
+    border: none;
 
 }
 
-#footer {
+.video {
+    width: 750px;
+    height: 450px;
+}
 
-    background-color: lightgray;
+.listings {
+    width: 300px;
+    height: 450px;
+}
+
+/*
+For the login page:
+*/
+
+#login {
+    margin-top: 15%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
-    width: 70%;
-    padding: 10px;
+    background-color: #dbdbdb;
+    width: 350px;
+    border: 1px solid #bababa;
+    border-radius: 15px;
+}
 
+/*
+For the 404 page:
+*/
+#fourohfour{
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #bbb;
+}
+
+/*
+For the nav bar:
+*/
+
+
+#nav a{
+    text-decoration: none;
+    color: graytext;
+}
+
+#nav li{
+    list-style-type: none;
+    display: inline;
+    font: 23px times, serif;
+    color: graytext;
+}
+
+#nav img {
+
+    float: left;
+    padding-left: 20px;
+
+}
+
+#test {
+    padding-left: 100px;
+}
+
+#nav li:hover{
+    background-color: #d9d9d9;
+}
+
+
+#nav-left{
+    text-align: left;
+    min-width: 500px;
+    float: left;
+}
+
+#nav-left li{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 17px;
+    padding-bottom: 9px;
+}
+
+#nav-right {
+    text-align: left;
+    float: right;
+}
+
+#nav-right li{
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 17px;
+    padding-bottom: 9px;
+}
+
+#nav{
+    background-color: #c8c8c8;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    z-index: 10000;
+    border: 1px solid #c8c8c8;
+    box-shadow: 0 5px 24px #c8c8c8;
+    min-width: 720px;
+}
+
+/*
+For the settings
+*/
+
+#settings {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dbdbdb;
+    width: 96%;
+    min-height: 90%;
+    border: 1px solid #bababa;
+}
+
+#settings-nav {
+    float: left;
+    height: 80%;
+    padding-right: 10px;
+    padding-top: 20px;
+    color: graytext;
+    font: 20 times, serif;
+    text-align: left;
+}
+
+#settings-nav a{
+    text-decoration: none;
+    color: graytext;
+}
+
+#settings-nav li{
+    list-style-type: none;
+    color: graytext;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#settings-nav li:hover{
+
+    background-color: #e8e8e8;
+
+}
+#menu {
+    text-align: left;
+    padding-top: 20px;
+}
+
+
+/*
+For the informational classes (errors and info)
+*/
+
+.info {
+    color: gray;
+}
+
+.error{
+    color: red;
+}
+
+.right{
+    text-align: right;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #d9d9d9;
+    border: 1px solid #bababa;
+    padding: 5px;
+    color: graytext;
+}
+
+
+/*
+For the error pages
+*/
+
+#error-403 {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dbdbdb;
+    width: 96%;
+    min-height: 90%;
+    border: 1px solid #bababa;
+}
+
+#error-404 {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dbdbdb;
+    width: 96%;
+    min-height: 90%;
+    border: 1px solid #bababa;
+}
+
+#error-505 {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dbdbdb;
+    width: 96%;
+    min-height: 90%;
+    border: 1px solid #bababa;
+}
+
+/*
+For system messages
+*/
+
+#message{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dbdbdb;
+    border: 1px solid #bababa;
+    border-radius: 15px;
+    width: 50%;
+    min-width: 500px;
+    text-align: left;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-left: 10px;
 }

@@ -107,29 +107,54 @@ ob_start();
     //Verify user is cleared to see the requested page
     if($auth == true){
 
-        //Make sure the page's path is valid
-        if(isset($page['path']) && file_exists(ABSPATH.'includes/views/themes/'.$settings['theme'].'/'.$page['path'])){
+        //Define the file requested for further tests
+        $file = ABSPATH.'includes/views/themes/'.$settings['theme'].'/'.$page['path'];
 
-            //Include the requested page
-            include_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/main.template.php');
+        //Make sure the page's path is valid
+        if(isset($page['path']) && file_exists($file)){
+
+
 
         }else{
 
             //Page does not exist or database error
 
+            //DO NOT include the requested page
+
             //Use, the 404 page instead
-            include_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/errors/404.php');
+
+            //Destroy any left over page data
+            unset($page);
+
+            //Force use of the 404 page
+            $page['page_id'] = null;
+            $page['name'] = null;
+            $page['path'] = '/errors/404.php';
+            $page['div_id'] = 'error-404';
 
         }
+
+
 
     }else{
 
         //DO NOT include the requested page
 
-        //Use, the 404 page instead
-        include_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/errors/404.php');
+        //Use, the 403 page instead
+
+        //Destroy any left over page data
+        unset($page);
+
+        //Force use of the 403 page
+        $page['page_id'] = null;
+        $page['name'] = null;
+        $page['path'] = '/errors/403.php';
+        $page['div_id'] = 'error-403';
 
     }
+
+    //Include the view
+    include_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/main.template.php');
 
 //Time Debugging
 $end_time = microtime(true);

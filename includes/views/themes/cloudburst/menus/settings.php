@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright 2013 William Caleb Kelly
+ * Copyright ${year} William Caleb Kelly
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,22 +15,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-/**
- * Name:        
- * Description: 
- * Date:        12/29/13
+ 
+ /**
+ * Name:        Settings Menu Handler
+ * Description: Builds the settings menus
+ * Date:        1/11/14
  * Programmer:  Liam Kelly
  */
 
-//Send error header
-header($_SERVER['SERVER_PROTOCOL'].'404 Not Found');
-
 ?>
 
-<h3>404, Resource Not Found</h3>
-<p>
-The resource you requested does not seem to exist. Please enjoy this complementary meme: <br />
+<h2>Settings</h2>
 
-<img src="./includes/views/themes/<?php echo $theme->dir_name; ?>/images/404.jpg" alt="This 404 page, now 20% cooler" title="Rainbow Dash" />
-<br />
+
+
+<div id="menu">
+    <span id="sidebar">
+
+        <ul>
+            <li>Logout</li>
+            <li>testing</li>
+        </ul>
+
+    </span>
+menu
+</div>

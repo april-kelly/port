@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright 2013 William Caleb Kelly
+ * Copyright ${year} William Caleb Kelly
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,22 +15,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-/**
- * Name:        
- * Description: 
- * Date:        12/29/13
+ 
+ /**
+ * Name:        Login Form
+ * Description: Form user fills out to login
+ * Date:        2/6/14
  * Programmer:  Liam Kelly
  */
 
-//Send error header
-header($_SERVER['SERVER_PROTOCOL'].'404 Not Found');
-
 ?>
-
-<h3>404, Resource Not Found</h3>
 <p>
-The resource you requested does not seem to exist. Please enjoy this complementary meme: <br />
-
-<img src="./includes/views/themes/<?php echo $theme->dir_name; ?>/images/404.jpg" alt="This 404 page, now 20% cooler" title="Rainbow Dash" />
-<br />
+    <b>Login</b>
+    <form action="login.php" method="post">
+        <label for="username">Username: </label>
+        <input type="text" name="username" />
+        <br />
+        <label for="password">Password: </label>
+        <input type="password" name="password" />
+        <br />
+        <input type="submit" value="login" />
+    </form>
+</p>

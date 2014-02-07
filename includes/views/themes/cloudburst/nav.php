@@ -24,15 +24,19 @@ if(isset($_SESSION['user_id'])){
 
 ?>
 
-<ul>
-    <li><a href="?p=tv">TV</a></li>
-    <!--
-    //The following are not implemented yet
-    <li><a href="?p=movies">Movies</a></li>
-    <li><a href="?p=music">Music</a></li>
-    <li><a href="?p=photos">Photos</a></li>
-    -->
-    <li><a href="?p=live">Live TV</a></li>
-    <li><a href="?p=settings">Settings</a></li>
-    <li><a href="?p=logout">Hi, <?php echo $name;?></a></li>
-</ul>
+<div id="nav-left">
+    <img src="<?php echo $settings['url']; ?>includes/views/themes/<?php echo $theme->dir_name ?>/images/logo.svg" width="100"/>
+    <ul>
+        <li><a href="./library">Library</a></li>
+        <li><a href="./live">Live TV</a></li>
+        <li><a href="./settings">Settings</a></li>
+    </ul>
+</div>
+<div id="nav-right">
+    <ul>
+        <li><a id="ul-right" href="?p=logout">Hi, <?php echo $name;?></a></li>
+    </ul>
+</div>
+
+
+

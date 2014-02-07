@@ -30,9 +30,9 @@ if(!(defined('ABSPATH'))){
 class settings {
 
     //About (put your product's info here)
-    public $product_name                            =   'CloudBurst';   //Your product name here
-    public $version                                 =   '0.0.2';   //Your version here
-    public $version_type                            =   'pre-alpha';   //Your version type here
+    public $product_name                            =   'CloudBurst';               //Your product name here
+    public $version                                 =   '0.0.2';                    //Your version here
+    public $version_type                            =   'pre-alpha';                //Your version type here
 
     //About Foundation Framework
     public $foundation_product_name                 =   'Foundation Framework';    //Defines the name of the foundation framework
@@ -50,12 +50,19 @@ class settings {
     public $plugins                                 =   true;                      //Enables optional plugins
     public $debug                                   =   true;                      //Enables debugging
     public $page_title                              =   'CloudBurst';    //Page title
+    public $domain                                  =   'localhost';     //Server Domian Name
+    public $protocol                                =   'http://';       //Server Protocol such as http:// https:// or gopher://
+    public $installation_dir                        =   'port/';         //Installation directory of foundation
+    public $url                                     =   '';              //Set in the constructor
 
     //Constructor
     public function __construct(){
 
         //Define where the settings file is
         $this->settings_path =  ABSPATH.'includes/data/'.$this->settings_filename;
+
+        //Define the full server url
+        $this->url = $this->protocol.$this->domain.'/'.$this->installation_dir;
 
         //Make sure the settings file exists
         if(!(file_exists($this->settings_path))){
@@ -80,8 +87,6 @@ class settings {
               $this->update($current_settings);
 
           }
-
-
 
     }
 
