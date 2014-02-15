@@ -55,6 +55,10 @@ class settings {
     public $installation_dir                        =   'port/';         //Installation directory of foundation
     public $url                                     =   '';              //Set in the constructor
 
+    //Secured io
+    public $enable_secured_io                       =   true;                       //Enables the secured io (to prevent from xss attacks)
+    public $io_flagging                             =   '';                         //Enables flagging of secured v. unsecured io
+
     //Constructor
     public function __construct(){
 
