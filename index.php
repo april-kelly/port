@@ -33,6 +33,7 @@ require_once(ABSPATH.'includes/models/users.php');
 require_once(ABSPATH.'includes/models/groups.php');
 require_once(ABSPATH.'includes/models/pages.php');
 require_once(ABSPATH.'includes/models/debug.php');
+require_once(ABSPATH.'includes/controllers/secured_io.php');
 
 //Start the user's session
 if(!(isset($_SESSION))){
@@ -48,6 +49,9 @@ $dbc   = new db;
 
 //Fetch the settings
 $settings = $set->fetch();
+
+//Secured io (for xss prevention)
+$io   = new secured_io;
 
 //Include the theme config
 require_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/config/theme_config.php');

@@ -37,6 +37,7 @@ class secured_io {
     //Class properties
     public $flagging = false;
     public $settings;
+    public $enabled = true;
 
     //Functions
 
@@ -48,10 +49,53 @@ class secured_io {
 
         //Re-define the configurable properties
         $this->flagging = $this->settings['io_flagging'];
+        $this->enabled  = $this->settings['enable_secured_io'];
+
+    }
+
+    public function sanitize($data){
+
+        return $data;
 
     }
 
     public function out($data){
+
+        //Check to see that we are enabled
+        if($this->enabled == true){
+
+            //Secured io is enabled
+
+            //Check for flagging
+            if($this->flagging == true){
+
+                //Flagging is enabled
+
+                //Flag
+                echo '<span class="secured">';
+
+                //Sanitize and send
+                echo $this->sanitize($data);
+
+                //End Flag
+                echo '</span>';
+
+
+            }else{
+
+                //Flagging is disabled
+
+                //Sanitize and send
+                echo $this->sanitize($data);
+
+            }
+
+        }else{
+
+            //Secured io has been disabled, just dump to the data to the page
+            echo $data;
+
+        }
 
     }
 

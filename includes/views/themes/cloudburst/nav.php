@@ -25,7 +25,7 @@ if(isset($_SESSION['user_id'])){
 ?>
 
 <div id="nav-left">
-    <img src="<?php echo $settings['url']; ?>includes/views/themes/<?php echo $theme->dir_name ?>/images/logo.svg" width="100"/>
+    <img src="<?php $io->dout($settings['url']); ?>includes/views/themes/<?php $io->dout($theme->dir_name) ?>/images/logo.svg" width="100"/>
     <ul>
         <li><a href="./library">Library</a></li>
         <li><a href="./live">Live TV</a></li>
@@ -34,7 +34,7 @@ if(isset($_SESSION['user_id'])){
 </div>
 <div id="nav-right">
     <ul>
-        <li><a id="ul-right" href="./logout">Hi, <?php echo $name;?></a></li>
+        <li><a id="ul-right" href="./logout">Hi, <?php $io->out($name);?></a></li>
     </ul>
 </div>
 
