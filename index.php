@@ -160,7 +160,7 @@ ob_start();
     //Time Debugging
     $end_time = microtime(true);
     $time = $end_time - $start_time;
-    $message = '<b>Info:</b> Page built in: '.$time.' sec.';
+    $footer_message = '<b>Info:</b> Page built in: '.$time.' sec.';
 
     //Include the view
     include_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/main.template.php');

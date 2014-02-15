@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright 2013 William Caleb Kelly
+ * Copyright ${year} William Caleb Kelly
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,18 +15,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+ 
  /**
- * Name:        Footer.php
- * Description: The theme's footer
- * Date:        1/7/14
+ * Name:        Logout
+ * Description: Destroy's a user's session
+ * Date:        2/15/14
  * Programmer:  Liam Kelly
  */
 
+//Make sure the user session is setup
+if(isset($_SESSION)){
 
-$io->out('<p>(C) Copyright '.date('Y').' William C. Kelly</p>');
+    //Destroy the session
+    session_destroy();
 
-//For optional footer messages
-if(isset($footer_message)){
-    $io->out($footer_message);
+    //Redirect the user
+    header('location: ./');
+
+}else{
+
+
+    //The user's session does not exist
+    $io->out('Something went wrong, you don\'t exist');
+
+
 }

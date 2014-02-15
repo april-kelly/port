@@ -38,6 +38,10 @@ require_once(ABSPATH.'includes/models/settings.php');
 //Setup users class
 $users = new users;
 
+//Setup the settings
+$set = new settings;
+$settings = $set->fetch();
+
 //Check a submitted login
 if(isset($_REQUEST['username']) && $_REQUEST['password']){
 

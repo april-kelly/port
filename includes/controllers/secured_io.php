@@ -53,12 +53,14 @@ class secured_io {
 
     }
 
+    //Sanitize data
     public function sanitize($data){
 
         return $data;
 
     }
 
+    //Output with optional flagging
     public function out($data){
 
         //Check to see that we are enabled
@@ -99,6 +101,26 @@ class secured_io {
 
     }
 
+    //Direct output with no flagging
+    public function dout($data){
+
+        //Check to see that we are enabled
+        if($this->enabled == true){
+
+            //Sanitize and send
+            echo $this->sanitize($data);
+
+        }else{
+
+            //Secured io has been disabled, just dump to the data to the page
+            echo $data;
+
+        }
+
+
+    }
+
+    //Input sanitize and return data
     public function in($data){
 
     }
