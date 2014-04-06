@@ -355,6 +355,6 @@ For system messages
     height: 200px;
 }
 
-.secured{
-    color: limegreen;
+.success{
+    color: black;
 }

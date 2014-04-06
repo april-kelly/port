@@ -26,6 +26,14 @@
 
 ?>
 
+<?php
+
+    if(isset($_SESSION['saved'])){
+        unset($_SESSION['saved']);
+        echo '<span class="success"><b>Info:</b> Save was successful</span><br /><br />';
+    }
+
+?>
 
 <form action="/<?php echo $base_dir; ?>/includes/controllers/save.php" method="post">
 

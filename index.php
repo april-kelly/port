@@ -117,7 +117,6 @@ if($settings['plugins'] == true){
 
 }
 
-
 //Look up the page
 $page = $pages->lookup($request);
 //var_dump($page);
@@ -201,7 +200,8 @@ ob_start();
     //Include the view
     include_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/main.template.php');
 
-
+    var_dump($_SESSION);
+    echo $request;
 //Conclude output buffer
 $ob = ob_get_contents();
 ob_end_clean();

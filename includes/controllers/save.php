@@ -23,6 +23,11 @@
  * Programmer:  Liam Kelly
  */
 
+//Start the users session
+if(!(isset($_SESSION))){
+    session_start();
+}
+
 //includes
 if(!(defined('ABSPATH'))){
     require_once('../../path.php');
@@ -47,6 +52,12 @@ foreach($_REQUEST as $key => $value){
 
     }
 }
-var_dump($settings);
+
 //Update the settings
 $set->update($settings);
+
+//Inform the user that the save happened
+$_SESSION['saved'] = true;
+
+//Send the user back
+header('location: /'.$settings['base_dir'].'/settings/general');
