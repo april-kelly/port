@@ -32,5 +32,5 @@ header($_SERVER['SERVER_PROTOCOL'].'404 Not Found');
 <p>
 The resource you requested does not seem to exist. Please enjoy this complementary meme: <br />
 
-<img src="./includes/views/themes/<?php echo $theme->dir_name; ?>/images/404.jpg" alt="This 404 page, now 20% cooler" title="Rainbow Dash" />
+<img src="/<?php echo $base_dir; ?>/includes/views/themes/<?php echo $theme->dir_name; ?>/images/404.jpg" alt="This 404 page, now 20% cooler" title="Rainbow Dash" />
 <br />

@@ -26,11 +26,27 @@
 //Make sure the user session is setup
 if(isset($_SESSION)){
 
+    //Detect anonymous user
+    if(isset($_SESSION['anon'])){
+        $anon = true;
+    }
+
     //Destroy the session
     session_destroy();
 
     //Redirect the user
-    header('location: ./');
+    if($anon == true){
+
+        //User is anonymous, send to login
+        header('location: '.$settings['url'].'/themes/'.$theme->dir_name.'/login.php');
+
+    }else{
+
+        //User is normal send to home page
+        header('location: ./');
+
+    }
+
 
 }else{
 

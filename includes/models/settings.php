@@ -56,7 +56,8 @@ class settings {
     public $url                                     =   '';              //Set in the constructor
 
     //Security
-    public $noauth_debug                            =   true;                       //Displays debugging information upon 403 error
+    public $noauth_debug                            =   true;            //Displays debugging information upon 403 error
+    public $anon                                    =   true;            //Enables anonymous users
 
     //Secured io (Deprecated)
     //public $enable_secured_io                       =   true;                       //Enables the secured io (to prevent from xss attacks)

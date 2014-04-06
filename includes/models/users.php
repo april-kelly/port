@@ -77,6 +77,7 @@ class users {
     //Login anonymous user
     public function login_anon(){
 
+        //Login anonymous user
         return $this->login($this->protected_settings->anon_user, $this->protected_settings->anon_pass);
 
     }

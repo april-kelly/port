@@ -32,7 +32,7 @@ header($_SERVER['SERVER_PROTOCOL'].'505 Internal Server Error');
         <h3>505, Internal Server Error</h3>
         <p>
             We are having some issues with our service right now. Please come back later.<br />
-            <img src="./includes/views/themes/<?php echo $theme->dir_name; ?>/images/derpy.png" alt="Derpy Hooves" title="Derpy Hooves"/>
+            <img src="/<?php echo $base_dir; ?>/includes/views/themes/<?php echo $theme->dir_name; ?>/images/derpy.png" alt="Derpy Hooves" title="Derpy Hooves"/>
             <br/>If you see this pony, tell her a datacenter is no place for muffins.<br />
             Please note I do not hold the copyright for this image, credit goes to <a href="http://www.deviantart.com/art/Derpy-404-326148742">aman692</a> on DeviantArt.
         </p>

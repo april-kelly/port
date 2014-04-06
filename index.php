@@ -78,9 +78,23 @@ $pages = new pages($dbc);
 //Check for login
 if(!(isset($_SESSION['user_id']))){
 
-    //User is NOT logged in, use anonymous user instead
-    $test = $users->login_anon();
-    $users->setup_session();
+    //Are anonymous users allowed?
+    if($settings['anon'] == true){
+
+        //User is NOT logged in, use anonymous user instead
+        $test = $users->login_anon();
+        $users->setup_session();
+        $_SESSION['anon'] = '';
+
+    }else{
+
+        //User is NOT logged in anonymous logins are DISABLED
+
+        //Send user to login
+        header('location: '.$settings['url'].$theme->dir_name.'/login.php');
+
+    }
+
 
 }
 
