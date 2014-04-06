@@ -200,8 +200,6 @@ ob_start();
     //Include the view
     include_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/main.template.php');
 
-    var_dump($_SESSION);
-    echo $request;
 //Conclude output buffer
 $ob = ob_get_contents();
 ob_end_clean();

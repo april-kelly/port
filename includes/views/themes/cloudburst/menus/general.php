@@ -26,11 +26,13 @@
 
 ?>
 
+<h3>General Settings</h3>
+
 <?php
 
     if(isset($_SESSION['saved'])){
         unset($_SESSION['saved']);
-        echo '<span class="success"><b>Info:</b> Save was successful</span><br /><br />';
+        echo '<span class="info"><b>Info:</b> Save was successful!</span><br /><br />';
     }
 
 ?>
@@ -48,7 +50,7 @@
 
     ?>
 
-    <input type="submit" />
+    <input type="submit" value="Save" />
 
 
 </form>

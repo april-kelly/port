@@ -26,7 +26,7 @@
       <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="358" column="16" selection-start="5050" selection-end="5050" vertical-scroll-proportion="0.0" vertical-offset="5484" max-vertical-offset="6205">
+            <state line="355" column="1" selection-start="5022" selection-end="5022" vertical-scroll-proportion="0.0" vertical-offset="4268" max-vertical-offset="6137">
               <folding />
             </state>
           </provider>
@@ -35,19 +35,8 @@
       <file leaf-file-name="settings.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/models/settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="9" selection-start="4066" selection-end="4066" vertical-scroll-proportion="-11.615385" vertical-offset="820" max-vertical-offset="1887">
+            <state line="80" column="9" selection-start="4066" selection-end="4066" vertical-scroll-proportion="2.6923077" vertical-offset="1192" max-vertical-offset="1887">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="general.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/general.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="87" selection-start="914" selection-end="914" vertical-scroll-proportion="0.6014388" vertical-offset="126" max-vertical-offset="1003">
-              <folding>
-                <element signature="e#7#606#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -72,11 +61,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="0" selection-start="3058" selection-end="3058" vertical-scroll-proportion="-8.115385" vertical-offset="1557" max-vertical-offset="3468">
+            <state line="201" column="0" selection-start="5030" selection-end="5030" vertical-scroll-proportion="0.63309354" vertical-offset="2739" max-vertical-offset="3434">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="general.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/general.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="-5.8076925" vertical-offset="342" max-vertical-offset="1037">
+              <folding>
+                <element signature="e#7#606#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,10 +120,10 @@
         <option value="$PROJECT_DIR$/includes/plugins/localize/main.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php" />
         <option value="$PROJECT_DIR$/includes/models/settings.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/includes/controllers/save.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/general.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -711,33 +711,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="358" column="16" selection-start="5050" selection-end="5050" vertical-scroll-proportion="0.0" vertical-offset="5484" max-vertical-offset="6205">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/models/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="9" selection-start="4066" selection-end="4066" vertical-scroll-proportion="-11.615385" vertical-offset="820" max-vertical-offset="1887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/controllers/save.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="20" selection-start="1428" selection-end="1428" vertical-scroll-proportion="-25.423077" vertical-offset="376" max-vertical-offset="1156">
           <folding>
             <element signature="e#7#606#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="0" selection-start="3058" selection-end="3058" vertical-scroll-proportion="-8.115385" vertical-offset="1557" max-vertical-offset="3468">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,12 +727,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="355" column="1" selection-start="5022" selection-end="5022" vertical-scroll-proportion="0.0" vertical-offset="4268" max-vertical-offset="6137">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/general.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="87" selection-start="914" selection-end="914" vertical-scroll-proportion="0.6014388" vertical-offset="126" max-vertical-offset="1003">
+        <state line="29" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="-5.8076925" vertical-offset="342" max-vertical-offset="1037">
           <folding>
             <element signature="e#7#606#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/models/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="9" selection-start="4066" selection-end="4066" vertical-scroll-proportion="2.6923077" vertical-offset="1192" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="201" column="0" selection-start="5030" selection-end="5030" vertical-scroll-proportion="0.63309354" vertical-offset="2739" max-vertical-offset="3434">
+          <folding />
         </state>
       </provider>
     </entry>
