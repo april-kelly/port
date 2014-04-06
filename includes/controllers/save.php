@@ -23,3 +23,30 @@
  * Programmer:  Liam Kelly
  */
 
+//includes
+if(!(defined('ABSPATH'))){
+    require_once('../../path.php');
+}
+require_once(ABSPATH.'includes/models/protected_settings.php');
+require_once(ABSPATH.'includes/models/settings.php');
+
+//Setup a new settings class
+$set = new settings();
+
+//Fetch the settings
+$settings = $set->fetch();
+
+//Update the settings
+foreach($_REQUEST as $key => $value){
+
+    //Ensure the key exists
+    if(isset($settings[$key])){
+
+        //Key exists, update it
+        $settings[$key] = $value;
+
+    }
+}
+var_dump($settings);
+//Update the settings
+$set->update($settings);

@@ -22,4 +22,25 @@
  * Date:        4/6/14
  * Programmer:  Liam Kelly
  */
- 
+
+
+?>
+
+
+<form action="/<?php echo $base_dir; ?>/includes/controllers/save.php" method="post">
+
+    <?php
+
+    foreach($settings as $key => $value){
+
+        echo '<label for="'.$key.'">'.$key.'</label>';
+        echo '<input type="text" name="'.$key.'" value="'.$value.'" /><br />';
+
+    }
+
+    ?>
+
+    <input type="submit" />
+
+
+</form>

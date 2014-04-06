@@ -80,22 +80,6 @@ class settings {
 
         }
 
-         //Handle any necessary updates to the settings file
-
-         //Get the current settings
-         $current_settings = (array) $this;
-
-          //Get the file's version
-          $settings_file = $this->fetch();
-
-          //Check for difference
-          if(!($current_settings == $settings_file)){
-
-              //Settings file is out of date, update it
-              $this->update($current_settings);
-
-          }
-
     }
 
     //Fetch settings
