@@ -27,6 +27,9 @@
 
 <p>
 
+    <b>Status</b><hr />
+    <br />
+
     Welcome to <?php echo $settings['product_name']; ?>
     <?php echo $settings['version']; ?>
     <?php echo $settings['version_type']; ?>!
@@ -36,9 +39,12 @@
     version <?php echo $settings['foundation_version']; ?>
     <?php echo $settings['foundation_version_type']; ?>.
     <br />
+    <br />
 
-    <hr />
+
     <b>Extended release info</b>
+    <hr />
+
     <pre>
     P-Series release:       Yes<br />
     Ponification:           Disabled<br />
@@ -47,8 +53,9 @@
     Developer tools:        Enabled<br />
     </pre>
 
-    <hr />
+
     <b>Settings Dump</b><br /><br />
+<hr />
 
     <b>JSON: </b>
         <pre>
@@ -63,17 +70,13 @@
     <br />
 
     <b>Key-Value Pairs: </b><br />
-
-
+    <pre>
     <?php
 
+        foreach($settings as $key => $value){
+            echo $key.' => '.$value."\r\n\r\n";
+        }
 
-
-    foreach($settings as $key => $value){
-        echo '<span style="text-align: left;">'.$key.'</span>';
-        echo '<span style="text-align: center;"> => </span>';
-        echo '<span style="text-align: right;">'.$value.'</span>';
-        echo '<br/>';
-    }
     ?>
+    </pre>
 </p>

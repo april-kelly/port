@@ -1,9 +1,9 @@
 
 <div id="settings-nav">
         <ul>
-        <li><a href="./status">Status</a></li>
+        <li><a href="./settings/status">Status</a></li>
         <li><a href="">General</a></li>
-        <li><a href="./users">Users</a></li>
+        <li><a href="./settings/users">Users</a></li>
         <li><a href="">TV</a></li>
         <li><a href="">Library</a></li>
 

@@ -114,13 +114,15 @@ ob_start();
     //Verify user is cleared to see the requested page
     if($auth == true || $page == null){
 
-        //Define the file requested for further tests
+        //Define the file path
         $file = ABSPATH.'includes/views/themes/'.$settings['theme'].'/'.$page['path'];
 
         //Make sure the page's path is valid
         if(isset($page['path']) && file_exists($file)){
 
+            //Page exists
 
+            //We don't need to do anything here, because the page to be load has already be defined.
 
         }else{
 
