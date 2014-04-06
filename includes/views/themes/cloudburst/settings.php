@@ -2,7 +2,7 @@
 <div id="settings-nav">
         <ul>
         <li><a href="/<?php echo $base_dir; ?>/settings/status">Status</a></li>
-        <li><a href="">General</a></li>
+        <li><a href="/<?php echo $base_dir; ?>/settings/general">General</a></li>
         <li><a href="/<?php echo $base_dir; ?>/settings/users">Users</a></li>
         <li><a href="">TV</a></li>
         <li><a href="">Library</a></li>
