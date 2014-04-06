@@ -36,6 +36,11 @@ class protected_settings{
     public $anon_user          = 'local';
     public $anon_pass          = 'password';
 
+    //Restriced user login
+    public $restricted_user    = 'restricted';
+    public $restricted_pass    = 'password';
+
+
     //Fetch Settings
     public function fetch(){
 

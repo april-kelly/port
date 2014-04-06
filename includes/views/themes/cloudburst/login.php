@@ -49,18 +49,25 @@ if(isset($_REQUEST['username']) && $_REQUEST['password']){
 
     if($user == true){
 
+        //Destroy left over restricted flag
+        if(isset($_SESSION['restricted'])){
+            unset($_SESSION['restricted']);
+        }
+
         //Success
         $users->setup_session();
 
         //Send user to home page
         header('location: '.$settings['url']);
 
+        echo 'success!';
+
     }else{
 
         //Failure
 
         //Send the user back to the login form
-        header('location: '.$_SESSION['last_page']);
+        //header('location: '.$_SESSION['last_page']);
 
         echo 'failed';
 

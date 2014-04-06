@@ -86,28 +86,23 @@ $pages = new pages($dbc);
     }
 
 //Check for login
-if(!(isset($_SESSION['user_id'])) && !($request == 'login')){
+if(!(isset($_SESSION['user_id']))){
 
     //Are anonymous users allowed?
-    if($settings['anon'] == true){
+    if($settings['anon'] == true && $no_anon == false){
 
         //User is NOT logged in, use anonymous user instead
         $test = $users->login_anon();
         $users->setup_session();
         $_SESSION['anon'] = true;
 
-        if(isset($no_anon)){
-
-            //Prevent the anonymous user from accessing pages other than the login
-            $_SESSION['restricted'] = true;
-
-        }
-
     }else{
 
         //User is NOT logged in anonymous logins are DISABLED
 
-        //Send user to login
+        //Login user as restricted and send to login page
+        $test = $users->login_restricted();
+        $users->setup_session();
         header('location: /'.$base_dir.'/login');
 
     }
@@ -122,19 +117,24 @@ if($settings['plugins'] == true){
 
 }
 
-if(isset($_SESSION['restricted'])){
-
-    //Force the user to the login page
-    $request = 'login';
-
-}
-
 
 //Look up the page
 $page = $pages->lookup($request);
+//var_dump($page);
 
 //Check the user's clearance
-$auth = $users->clearance_check($_SESSION['user_id'], $page['group_id']);
+foreach($page as $key => $value){
+
+    $auth = $users->clearance_check($_SESSION['user_id'], $value['group_id']);
+
+    if($auth == true){
+        break;
+    }
+}
+
+//Show only the first result
+$page = $page[0];
+
 $group = $page['group_id'];
 
 //Start output buffering

@@ -30,6 +30,7 @@ if(!(defined('ABSPATH'))){
 require_once(ABSPATH.'includes/models/pdo.php');
 require_once(ABSPATH.'includes/models/debug.php');
 require_once(ABSPATH.'includes/models/protected_settings.php');
+require_once(ABSPATH.'includes/models/settings.php');
 
 class users {
 
@@ -72,13 +73,33 @@ class users {
         //Setup Protected Settings
         $this->protected_settings = new protected_settings;
 
+        //Setup Settigns
+        $this->settings = new settings;
+
     }
 
     //Login anonymous user
     public function login_anon(){
 
+        //Prevent logins when anon is disabled
+        if($this->settings->anon == true){
+
+            //Login anonymous user
+            return $this->login($this->protected_settings->anon_user, $this->protected_settings->anon_pass);
+
+        }else{
+
+            return false;
+
+        }
+
+    }
+
+    //Login anonymous user
+    public function login_restricted(){
+
         //Login anonymous user
-        return $this->login($this->protected_settings->anon_user, $this->protected_settings->anon_pass);
+        return $this->login($this->protected_settings->restricted_user, $this->protected_settings->restricted_pass);
 
     }
 
@@ -173,6 +194,7 @@ class users {
             $query = "SELECT * FROM  `users-groups` WHERE  `user_id` =  :user_id AND  `group_id` =  :group_id";
             $handle= $this->dbc->setup($query);
             $users = $this->dbc->fetch_assoc($handle, array('user_id' => $user_id, 'group_id' => $group_id));
+
 
             //Make sure there were results
             if(!(empty($users)) && !($users == false)){

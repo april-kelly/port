@@ -86,8 +86,8 @@ class pages{
                 $this->path    = $pages[0]["path"];
                 $this->div_id  = $pages[0]["div_id"];
 
-                //return the first result only
-                return $pages[0];
+                //return the results
+                return $pages;
 
             }else{
 

@@ -27,10 +27,12 @@
 include_once(ABSPATH.'/includes/controllers/get_ip.php');
 
 //Test to see if the user is on the local network
-$results = false;//is_local();
+$results = is_local();
 
 
 //Disable anonymous logins for non local users
 if($results == false){
     $no_anon = true;
+}else{
+    $no_anon = false;
 }

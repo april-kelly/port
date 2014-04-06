@@ -35,25 +35,41 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="0" selection-start="3227" selection-end="3227" vertical-scroll-proportion="-25.423077" vertical-offset="1277" max-vertical-offset="3468">
+            <state line="135" column="17" selection-start="3370" selection-end="3370" vertical-scroll-proportion="-12.461538" vertical-offset="1733" max-vertical-offset="3468">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_form.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pages.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/models/pages.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="31" selection-start="2571" selection-end="2571" vertical-scroll-proportion="-23.653847" vertical-offset="881" max-vertical-offset="4046">
+              <folding>
+                <marker date="1396817065341" expanded="true" signature="1706:1776" placeholder="SELECT * FRO..." />
+                <marker date="1396817065341" expanded="true" signature="3079:3136" placeholder="INSERT INTO ..." />
+                <marker date="1396817065341" expanded="true" signature="4416:4510" placeholder="UPDATE pages..." />
+                <marker date="1396817065341" expanded="true" signature="5593:5637" placeholder="DELETE FROM ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/plugins/localize/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="11" selection-start="903" selection-end="903" vertical-scroll-proportion="0.6705036" vertical-offset="27" max-vertical-offset="748">
+              <folding>
+                <element signature="e#7#609#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/login_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="45" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.5136691" vertical-offset="0" max-vertical-offset="695">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="505.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/errors/505.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="22" selection-start="957" selection-end="983" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="527">
+            <state line="24" column="0" selection-start="743" selection-end="743" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -62,25 +78,14 @@
       <file leaf-file-name="users.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/models/users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="26" selection-start="2039" selection-end="2039" vertical-scroll-proportion="59.346153" vertical-offset="2835" max-vertical-offset="6579">
+            <state line="195" column="109" selection-start="5392" selection-end="5392" vertical-scroll-proportion="-11.0" vertical-offset="3029" max-vertical-offset="6953">
               <folding>
                 <element signature="e#7#606#0" expanded="true" />
-                <marker date="1396770280115" expanded="true" signature="2737:2818" placeholder="SELECT * FRO..." />
-                <marker date="1396770280115" expanded="true" signature="4648:4735" placeholder="SELECT * FRO..." />
-                <marker date="1396770280115" expanded="true" signature="5814:5860" placeholder="SELECT * FRO..users..." />
-                <marker date="1396770280115" expanded="true" signature="7444:7549" placeholder="INSERT INTO ..." />
-                <marker date="1396770280115" expanded="true" signature="10398:10442" placeholder="DELETE FROM ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/plugins/localize/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="22" selection-start="994" selection-end="994" vertical-scroll-proportion="-21.576923" vertical-offset="0" max-vertical-offset="714">
-              <folding>
-                <element signature="e#7#609#0" expanded="true" />
+                <marker date="1396816591045" expanded="true" signature="3234:3315" placeholder="SELECT * FRO..." />
+                <marker date="1396816591045" expanded="true" signature="5145:5232" placeholder="SELECT * FRO..." />
+                <marker date="1396816591045" expanded="true" signature="6312:6358" placeholder="SELECT * FRO..users..." />
+                <marker date="1396816591045" expanded="true" signature="7942:8047" placeholder="INSERT INTO ..." />
+                <marker date="1396816591045" expanded="true" signature="10896:10940" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -97,7 +102,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/config/theme_config.php" />
-        <option value="$PROJECT_DIR$/includes/models/protected_settings.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/settings.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/player.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/video.php" />
@@ -106,7 +110,6 @@
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/status.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/users.php" />
         <option value="$PROJECT_DIR$/includes/models/make_readable.php" />
-        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/login.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css" />
         <option value="$PROJECT_DIR$/channels.php" />
         <option value="$PROJECT_DIR$/abstract_sexuality.php" />
@@ -122,10 +125,13 @@
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/errors/505.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/logout.php" />
         <option value="$PROJECT_DIR$/includes/hooks/system/localize.php" />
-        <option value="$PROJECT_DIR$/includes/plugins/localize/main.php" />
+        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/login.php" />
+        <option value="$PROJECT_DIR$/includes/models/protected_settings.php" />
         <option value="$PROJECT_DIR$/includes/models/users.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/includes/models/pages.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/login_form.php" />
+        <option value="$PROJECT_DIR$/includes/plugins/localize/main.php" />
       </list>
     </option>
   </component>
@@ -226,36 +232,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cloudburst" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="port" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudburst" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="errors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -419,14 +395,11 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="95" selection-start="856" selection-end="856" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1377" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="38" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0" vertical-offset="625" max-vertical-offset="5134">
@@ -486,11 +459,6 @@
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/settings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="10" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="799" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/models/protected_settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="44" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.4473684" vertical-offset="0" max-vertical-offset="684" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
@@ -649,20 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="26" selection-start="1124" selection-end="1124" vertical-scroll-proportion="-0.9230769" vertical-offset="452" max-vertical-offset="1241">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="46" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.63597125" vertical-offset="0" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/hooks/system/localize.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="60" selection-start="839" selection-end="839" vertical-scroll-proportion="0.63597125" vertical-offset="0" max-vertical-offset="695">
@@ -695,6 +649,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="46" selection-start="1078" selection-end="1078" vertical-scroll-proportion="-13.769231" vertical-offset="84" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="9" selection-start="1451" selection-end="1451" vertical-scroll-proportion="0.3151079" vertical-offset="461" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/errors/505.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="22" selection-start="957" selection-end="983" vertical-scroll-proportion="0.49853373" vertical-offset="0" max-vertical-offset="682">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/models/protected_settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="24" selection-start="740" selection-end="740" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/models/settings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="84" selection-start="3238" selection-end="3238" vertical-scroll-proportion="-19.346153" vertical-offset="262" max-vertical-offset="2159">
@@ -702,47 +684,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/plugins/localize/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="994" selection-end="994" vertical-scroll-proportion="-21.576923" vertical-offset="0" max-vertical-offset="714">
-          <folding>
-            <element signature="e#7#609#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/models/users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="26" selection-start="2039" selection-end="2039" vertical-scroll-proportion="59.346153" vertical-offset="2835" max-vertical-offset="6579">
+        <state line="195" column="109" selection-start="5392" selection-end="5392" vertical-scroll-proportion="-11.0" vertical-offset="3029" max-vertical-offset="6953">
           <folding>
             <element signature="e#7#606#0" expanded="true" />
-            <marker date="1396770280115" expanded="true" signature="2737:2818" placeholder="SELECT * FRO..." />
-            <marker date="1396770280115" expanded="true" signature="4648:4735" placeholder="SELECT * FRO..." />
-            <marker date="1396770280115" expanded="true" signature="5814:5860" placeholder="SELECT * FRO..users..." />
-            <marker date="1396770280115" expanded="true" signature="7444:7549" placeholder="INSERT INTO ..." />
-            <marker date="1396770280115" expanded="true" signature="10398:10442" placeholder="DELETE FROM ..." />
+            <marker date="1396816591045" expanded="true" signature="3234:3315" placeholder="SELECT * FRO..." />
+            <marker date="1396816591045" expanded="true" signature="5145:5232" placeholder="SELECT * FRO..." />
+            <marker date="1396816591045" expanded="true" signature="6312:6358" placeholder="SELECT * FRO..users..." />
+            <marker date="1396816591045" expanded="true" signature="7942:8047" placeholder="INSERT INTO ..." />
+            <marker date="1396816591045" expanded="true" signature="10896:10940" placeholder="DELETE FROM ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="0" selection-start="3227" selection-end="3227" vertical-scroll-proportion="-25.423077" vertical-offset="1277" max-vertical-offset="3468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/errors/505.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="22" selection-start="957" selection-end="983" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="527">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/login_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="45" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.5136691" vertical-offset="0" max-vertical-offset="695">
+        <state line="24" column="0" selection-start="743" selection-end="743" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="510">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="17" selection-start="3370" selection-end="3370" vertical-scroll-proportion="-12.461538" vertical-offset="1733" max-vertical-offset="3468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/models/pages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="31" selection-start="2571" selection-end="2571" vertical-scroll-proportion="-23.653847" vertical-offset="881" max-vertical-offset="4046">
+          <folding>
+            <marker date="1396817065341" expanded="true" signature="1706:1776" placeholder="SELECT * FRO..." />
+            <marker date="1396817065341" expanded="true" signature="3079:3136" placeholder="INSERT INTO ..." />
+            <marker date="1396817065341" expanded="true" signature="4416:4510" placeholder="UPDATE pages..." />
+            <marker date="1396817065341" expanded="true" signature="5593:5637" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/plugins/localize/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="11" selection-start="903" selection-end="903" vertical-scroll-proportion="0.6705036" vertical-offset="27" max-vertical-offset="748">
+          <folding>
+            <element signature="e#7#609#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
