@@ -30,5 +30,15 @@ header($_SERVER['SERVER_PROTOCOL'].'403 Forbidden');
 
 <h3>403, Forbidden</h3>
 <p>
-    You are unauthorized to access this resource. Sorry about that.
+    You are unauthorized to access this resource. Sorry about that. <br />
+    <?php
+
+        if($settings['noauth_debug'] == true && $settings['debug'] == true){
+
+            echo 'User '.$name.' is not a member of the group '.$page['group_id'];
+
+        }
+
+    ?>
+
 </p>

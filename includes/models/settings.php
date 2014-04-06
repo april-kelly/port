@@ -46,7 +46,7 @@ class settings {
     //General Settings
     public $mlp                                     =   "\x61\x77\x65\x73\x6F\x6d\x65";   //Deal with it, ponies are awesome
     public $ponify                                  =   false;                     //Ponifys the application if implemented
-    public $theme                                   =   'cloudburst';                 //Sets the theme
+    public $theme                                   =   'cloudburst';              //Sets the theme
     public $plugins                                 =   true;                      //Enables optional plugins
     public $debug                                   =   true;                      //Enables debugging
     public $page_title                              =   'CloudBurst';    //Page title
@@ -55,9 +55,12 @@ class settings {
     public $installation_dir                        =   'port/';         //Installation directory of foundation
     public $url                                     =   '';              //Set in the constructor
 
-    //Secured io
-    public $enable_secured_io                       =   true;                       //Enables the secured io (to prevent from xss attacks)
-    public $io_flagging                             =   true;                         //Enables flagging of secured v. unsecured io
+    //Security
+    public $noauth_debug                            =   true;                       //Displays debugging information upon 403 error
+
+    //Secured io (Deprecated)
+    //public $enable_secured_io                       =   true;                       //Enables the secured io (to prevent from xss attacks)
+    //public $io_flagging                             =   true;                       //Enables flagging of secured v. unsecured io
 
     //Constructor
     public function __construct(){

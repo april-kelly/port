@@ -34,7 +34,7 @@ require_once(ABSPATH.'includes/models/groups.php');
 require_once(ABSPATH.'includes/models/pages.php');
 require_once(ABSPATH.'includes/models/debug.php');
 
-//Secured io (to be implemented)
+//Secured io (Deprecated)
 //require_once(ABSPATH.'includes/controllers/secured_io.php');
 
 //Start the user's session
@@ -106,12 +106,13 @@ $page = $pages->lookup($request);
 
 //Check the user's clearance
 $auth = $users->clearance_check($_SESSION['user_id'], $page['group_id']);
+$group = $page['group_id'];
 
 //Start output buffering
 ob_start();
 
     //Verify user is cleared to see the requested page
-    if($auth == true){
+    if($auth == true || $page == null){
 
         //Define the file requested for further tests
         $file = ABSPATH.'includes/views/themes/'.$settings['theme'].'/'.$page['path'];
@@ -137,6 +138,7 @@ ob_start();
             $page['name'] = null;
             $page['path'] = '/errors/404.php';
             $page['div_id'] = 'error-404';
+            $page['group_id'] = $group;
 
         }
 
@@ -156,6 +158,7 @@ ob_start();
         $page['name'] = null;
         $page['path'] = '/errors/403.php';
         $page['div_id'] = 'error-403';
+        $page['group_id'] = $group;
 
     }
 
