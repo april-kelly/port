@@ -36,7 +36,7 @@ if(isset($_SESSION)){
 
 
     //The user's session does not exist
-    $io->out('Something went wrong, you don\'t exist');
+    echo 'Something went wrong, you don\'t exist';
 
 
 }

@@ -55,6 +55,9 @@ $settings = $set->fetch();
 //Secured io (for xss prevention)
 //$io   = new secured_io;
 
+//Define the base_dir variable
+$base_dir = $settings['base_dir'];
+
 //Include the theme config
 require_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/config/theme_config.php');
 $theme  = new theme_config;

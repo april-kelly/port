@@ -1,17 +1,17 @@
 
 <div id="settings-nav">
         <ul>
-        <li><a href="./settings/status">Status</a></li>
+        <li><a href="/<?php echo $base_dir; ?>/settings/status">Status</a></li>
         <li><a href="">General</a></li>
-        <li><a href="./settings/users">Users</a></li>
+        <li><a href="/<?php echo $base_dir; ?>/settings/users">Users</a></li>
         <li><a href="">TV</a></li>
         <li><a href="">Library</a></li>
 
         <?php if($settings['debug'] == true){ ?>
             <br />
-            <li><a href="./pages">Pages</a></li>
-            <li><a href="./debug">Debug</a></li>
-            <li><a href="./developer">Developer</a></li>
+            <li><a href="/<?php echo $base_dir; ?>/settings/pages">Pages</a></li>
+            <li><a href="/<?php echo $base_dir; ?>/settings/debug">Debug</a></li>
+            <li><a href="/<?php echo $base_dir; ?>/settings/developer">Developer</a></li>
         <?php } ?>
 
     </ul>

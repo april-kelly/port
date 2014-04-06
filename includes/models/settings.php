@@ -52,7 +52,7 @@ class settings {
     public $page_title                              =   'CloudBurst';    //Page title
     public $domain                                  =   'localhost';     //Server Domian Name
     public $protocol                                =   'http://';       //Server Protocol such as http:// https:// or gopher://
-    public $installation_dir                        =   'port/';         //Installation directory of foundation
+    public $base_dir                                =   'port';          //Installation directory of foundation
     public $url                                     =   '';              //Set in the constructor
 
     //Security
@@ -69,7 +69,7 @@ class settings {
         $this->settings_path =  ABSPATH.'includes/data/'.$this->settings_filename;
 
         //Define the full server url
-        $this->url = $this->protocol.$this->domain.'/'.$this->installation_dir;
+        $this->url = $this->protocol.$this->domain.'/'.$this->base_dir.'/';
 
         //Make sure the settings file exists
         if(!(file_exists($this->settings_path))){
