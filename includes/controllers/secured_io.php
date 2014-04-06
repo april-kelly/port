@@ -23,10 +23,14 @@
  * Programmer:  Liam Kelly
  */
 
+/**
+ * Notice: This file is deprecated.
+ */
+
 //Includes
 
-    //Ensure ABSPATH is set
-    if(!(defined('ABSPATH'))){
+//Ensure ABSPATH is set
+if(!(defined('ABSPATH'))){
         require_once('../../path.php');
     }
 

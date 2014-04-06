@@ -25,9 +25,9 @@
 
     <head>
 
-        <title><?php $io->dout($settings['page_title']); ?></title>
+        <title><?php echo $settings['page_title']; ?></title>
 
-        <link href="<?php $io->dout($settings['url']); ?>includes/views/themes/<?php $io->dout($theme->dir_name) ?>/styles/styles.css" rel="stylesheet"/>
+        <link href="<?php echo $settings['url']; ?>includes/views/themes/<?php echo $theme->dir_name; ?>/styles/styles.css" rel="stylesheet"/>
 
         <link href="http://localhost/cloudburst/cludes/libraries/jquery/video-js.css" rel="stylesheet">
         <link rel="stylesheet" href="/includes/libraries/bxslider/jquery.bxslider.css">
