@@ -92,6 +92,11 @@ class users {
         $_SESSION['user_id'] = $this->user_id;
         $_SESSION['name']    = $this->firstname;
 
+        //Remove anon flag
+        if(isset($_SESSION['anon'])){
+            unset($_SESSION['anon']);
+        }
+
     }
 
     //Login function

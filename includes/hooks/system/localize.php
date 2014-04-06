@@ -17,42 +17,12 @@
  */
  
  /**
- * Name:        Logout
- * Description: Destroy's a user's session
- * Date:        2/15/14
+ * Name:        Localize Plugin Hook
+ * Description: Starts the Localize plugin
+ * Date:        4/6/14
  * Programmer:  Liam Kelly
  */
 
-//Make sure the user session is setup
-if(isset($_SESSION)){
-
-    //Detect anonymous user
-    if(isset($_SESSION['anon'])){
-        $anon = true;
-    }
-
-    //Destroy the session
-    session_destroy();
-
-    //Redirect the user
-    if($anon == true){
-
-        //User is anonymous, send to login
-        header('location: /'.$base_dir.'/login');
-
-    }else{
-
-        //User is normal send to home page
-        header('location: ./');
-
-    }
-
-
-}else{
-
-
-    //The user's session does not exist
-    echo 'Something went wrong, you don\'t exist';
-
-
-}
+//call the localize plugin
+include_once(ABSPATH.'/includes/plugins/localize/main.php');
+ 

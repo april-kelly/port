@@ -75,8 +75,18 @@ if($dbc->fail == true){
 $users = new users($dbc);
 $pages = new pages($dbc);
 
+//Run system plugins
+    include_once(ABSPATH.'includes/controllers/launch_system_plugins.php');
+
+//Get the user's page request
+    if(isset($_REQUEST['p']) && !(empty($_REQUEST['p']))){
+        $request = $_REQUEST['p'];
+    }else{
+        $request = 'home';
+    }
+
 //Check for login
-if(!(isset($_SESSION['user_id']))){
+if(!(isset($_SESSION['user_id'])) && !($request == 'login')){
 
     //Are anonymous users allowed?
     if($settings['anon'] == true){
@@ -84,36 +94,38 @@ if(!(isset($_SESSION['user_id']))){
         //User is NOT logged in, use anonymous user instead
         $test = $users->login_anon();
         $users->setup_session();
-        $_SESSION['anon'] = '';
+        $_SESSION['anon'] = true;
+
+        if(isset($no_anon)){
+
+            //Prevent the anonymous user from accessing pages other than the login
+            $_SESSION['restricted'] = true;
+
+        }
 
     }else{
 
         //User is NOT logged in anonymous logins are DISABLED
 
         //Send user to login
-        header('location: '.$settings['url'].$theme->dir_name.'/login.php');
+        header('location: /'.$base_dir.'/login');
 
     }
 
 
 }
 
-//Get the user's page request
-if(isset($_REQUEST['p']) && !(empty($_REQUEST['p']))){
-    $request = $_REQUEST['p'];
-}else{
-    $request = 'home';
-}
-
-
-//Run system plugins
-include_once(ABSPATH.'includes/controllers/launch_system_plugins.php');
-
-
 //Run any optional plugins
 if($settings['plugins'] == true){
 
     include_once(ABSPATH.'includes/controllers/launch_optional_plugins.php');
+
+}
+
+if(isset($_SESSION['restricted'])){
+
+    //Force the user to the login page
+    $request = 'login';
 
 }
 

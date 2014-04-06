@@ -17,42 +17,20 @@
  */
  
  /**
- * Name:        Logout
- * Description: Destroy's a user's session
- * Date:        2/15/14
+ * Name:        Localize plugin
+ * Description: Adds support for localization based on ip addresses
+ * Date:        4/6/14
  * Programmer:  Liam Kelly
  */
 
-//Make sure the user session is setup
-if(isset($_SESSION)){
+//includes
+include_once(ABSPATH.'/includes/controllers/get_ip.php');
 
-    //Detect anonymous user
-    if(isset($_SESSION['anon'])){
-        $anon = true;
-    }
-
-    //Destroy the session
-    session_destroy();
-
-    //Redirect the user
-    if($anon == true){
-
-        //User is anonymous, send to login
-        header('location: /'.$base_dir.'/login');
-
-    }else{
-
-        //User is normal send to home page
-        header('location: ./');
-
-    }
+//Test to see if the user is on the local network
+$results = false;//is_local();
 
 
-}else{
-
-
-    //The user's session does not exist
-    echo 'Something went wrong, you don\'t exist';
-
-
+//Disable anonymous logins for non local users
+if($results == false){
+    $no_anon = true;
 }

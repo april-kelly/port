@@ -25,8 +25,8 @@
 
 ?>
 <p>
-    <img src="./includes/views/themes/<?php echo $theme->dir_name ?>/images/logo.svg" width="200px" /><br />
-    <form action="./includes/views/themes/<?php echo $theme->dir_name ?>/login.php" method="post">
+    <img src="/<?php echo $base_dir; ?>/includes/views/themes/<?php echo $theme->dir_name ?>/images/logo.svg" width="200px" /><br />
+    <form action="/<?php echo $base_dir; ?>/includes/views/themes/<?php echo $theme->dir_name ?>/login.php" method="post">
         <label for="username">Username: </label>
         <input type="text" name="username" />
         <br />
