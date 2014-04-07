@@ -29,6 +29,7 @@ if(!(defined('ABSPATH'))){
 }
 require_once(ABSPATH.'includes/models/pdo.php');
 require_once(ABSPATH.'includes/models/debug.php');
+require_once(ABSPATH.'includes/models/settings.php');
 
 class pages{
 
@@ -39,10 +40,12 @@ class pages{
         public $name;
         public $path;
         public $div_id;
+        public $parameters;
 
         //Control
         public $dbc;
         public $debug;
+        public $settings;
 
 
     //Constructor
@@ -65,6 +68,10 @@ class pages{
         //Setup debugging
         $this->debug = new debug;
 
+        //Setup settings
+        $set = new settings;
+        $this->settings = $set->fetch;
+
     }
 
     //Lookup a page
@@ -81,10 +88,11 @@ class pages{
             if(!(empty($pages)) && !($pages == false)){
 
                 //Insert results into object
-                $this->page_id = $pages[0]["page_id"];
-                $this->name    = $pages[0]["name"];
-                $this->path    = $pages[0]["path"];
-                $this->div_id  = $pages[0]["div_id"];
+                $this->page_id    = $pages[0]["page_id"];
+                $this->name       = $pages[0]["name"];
+                $this->path       = $pages[0]["path"];
+                $this->div_id     = $pages[0]["div_id"];
+                $this->parameters = $pages[0]["parameters"];
 
                 //return the results
                 return $pages;
@@ -145,12 +153,12 @@ class pages{
             //Ok, something went wrong, let's handle it
 
             //Let the debugger now about this (if enabled)
-            //if(isset($settings['debug']) && $settings["debug"] == true){
+            if($this->settings["debug"] == true){
 
                 $this->debug->add_exception($e);
                 $this->debug->add_message('An error was encountered in the pages class, add_page() function.');
 
-            //}
+            }
 
             //Indicate failure by returning false
             return false;
@@ -160,7 +168,7 @@ class pages{
     }
 
     //Change a page
-    public function update_page($page_id, $name, $path, $div_id){
+    public function update_page($page_id, $name, $path, $div_id, $params){
 
         //Handle empty parameters
         if(empty($name)){
@@ -178,15 +186,16 @@ class pages{
         try{
 
             //Setup Insert
-            $query = "UPDATE pages SET `name` = :name, `path` = :path, `div_id` = :div_id WHERE `page_id` = :page_id ";
+            $query = "UPDATE pages SET `name` = :name, `path` = :path, `div_id` = :div_id WHERE `page_id` = :page_id `parameters` = :params";
             $handle= $this->dbc->setup($query);
 
             //Define Parameters
             $parameters = array(
-                'page_id' => $page_id,
-                'name'    => $name,
-                'path'    => $path,
-                'div_id'  => $div_id,
+                'page_id'    => null,
+                'name'       => $name,
+                'path'       => $path,
+                'div_id'     => $div_id,
+                'parameters' => $params
             );
 
             //Run Insert
@@ -200,7 +209,7 @@ class pages{
             //Ok, something went wrong, let's handle it
 
             //Let the debugger now about this (if enabled)
-            if(isset($settings['debug']) && $settings["debug"] == true){
+            if($this->settings["debug"] == true){
 
                 $this->debug->add_exception($e);
                 $this->debug->add_message('An error was encountered in the pages class, update_page() function.');
@@ -232,7 +241,7 @@ class pages{
             //Ok, something went wrong, let's handle it
 
             //Let the debugger now about this (if enabled)
-            if(isset($settings['debug']) && $settings["debug"] == true){
+            if($this->settings["debug"] == true){
 
                 $this->debug->add_exception($e);
                 $this->debug->add_message('An error was encountered in the pages class, delete_page() function.');
