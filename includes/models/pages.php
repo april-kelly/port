@@ -168,7 +168,7 @@ class pages{
     }
 
     //Change a page
-    public function update_page($page_id, $name, $path, $div_id, $params){
+    public function update_page($name, $path, $div_id, $params){
 
         //Handle empty parameters
         if(empty($name)){
