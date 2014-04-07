@@ -32,10 +32,10 @@ require_once(ABSPATH.'includes/models/pages.php');
 //Setup the pages object
 $pages = new pages;
 
-$name = 'settings/groups';
-$path = 'settings.php';
-$div_id = 'settings';
-$parameters = '{"menu":"groups.php"}';
+$name = $_REQUEST['name'];
+$path = $_REQUEST['path'];
+$div_id = $_REQUEST['div_id'];
+$parameters = $_REQUEST['parameters'];
 
 $test = $pages->add_page($name, $path, $div_id, $parameters);
 

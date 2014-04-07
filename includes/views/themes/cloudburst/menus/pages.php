@@ -26,7 +26,7 @@
 ?>
 <h3>Page Settings</h3>
 
-<form action="/<?php echo $base_dir; ?>/includes/controllers/save.php" method="post">
+<form action="/<?php echo $base_dir; ?>/includes/controllers/page_update.php" method="post">
 
     <b>Add Page</b><br />
 
