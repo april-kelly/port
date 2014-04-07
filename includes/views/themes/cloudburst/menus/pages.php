@@ -26,9 +26,26 @@
 ?>
 <h3>Page Settings</h3>
 
-<form>
+<form action="/<?php echo $base_dir; ?>/includes/controllers/save.php" method="post">
 
     <b>Add Page</b><br />
+
+    <label for="name">name: </label>
+    <input type="text" name="name" id="name" />
+    <br />
+
+    <label for="path">path </label>
+    <input type="text" name="path" id="path" />
+    <br />
+
+    <label for="div_id">div_id</label>
+    <input type="text" name="div_id" id="div_id" />
+    <br />
+
+    <label for="parameters">parameters</label>
+    <input type="text" name="parameters" id="parameters" />
+    <br />
+
 
     <input type="submit" value="Add" />
 

@@ -70,7 +70,7 @@ class pages{
 
         //Setup settings
         $set = new settings;
-        $this->settings = $set->fetch;
+        $this->settings = $set->fetch();
 
     }
 

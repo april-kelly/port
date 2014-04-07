@@ -23,11 +23,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css">
+      <file leaf-file-name="pages.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/models/pages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="355" column="1" selection-start="5022" selection-end="5022" vertical-scroll-proportion="0.0" vertical-offset="4268" max-vertical-offset="6137">
-              <folding />
+            <state line="72" column="39" selection-start="1761" selection-end="1761" vertical-scroll-proportion="0.6388489" vertical-offset="542" max-vertical-offset="4233">
+              <folding>
+                <marker date="1396833640235" expanded="true" signature="1910:1980" placeholder="SELECT * FRO..." />
+                <marker date="1396833640235" expanded="true" signature="3366:3436" placeholder="INSERT INTO ..." />
+                <marker date="1396833640235" expanded="true" signature="4745:4862" placeholder="UPDATE pages..." />
+                <marker date="1396833640235" expanded="true" signature="5969:6013" placeholder="DELETE FROM ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pages.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/pages.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="10" selection-start="1293" selection-end="1293" vertical-scroll-proportion="-25.192308" vertical-offset="127" max-vertical-offset="1207">
+              <folding>
+                <element signature="e#7#606#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,22 +51,8 @@
       <file leaf-file-name="settings.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="14" selection-start="919" selection-end="919" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="833">
+            <state line="22" column="9" selection-start="823" selection-end="823" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="850">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pages.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/includes/models/pages.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="32" selection-start="4468" selection-end="4468" vertical-scroll-proportion="0.12374101" vertical-offset="2566" max-vertical-offset="4233">
-              <folding>
-                <marker date="1396833144166" expanded="true" signature="1908:1978" placeholder="SELECT * FRO..." />
-                <marker date="1396833144166" expanded="true" signature="3364:3434" placeholder="INSERT INTO ..." />
-                <marker date="1396833144166" expanded="true" signature="4743:4860" placeholder="UPDATE pages..." />
-                <marker date="1396833144166" expanded="true" signature="5967:6011" placeholder="DELETE FROM ..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -59,6 +61,17 @@
         <entry file="file://$PROJECT_DIR$/includes/controllers/page_update.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="41" column="22" selection-start="1135" selection-end="1135" vertical-scroll-proportion="-17.576923" vertical-offset="240" max-vertical-offset="935">
+              <folding>
+                <element signature="e#7#606#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="general.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/general.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="70" selection-start="959" selection-end="1023" vertical-scroll-proportion="-13.346154" vertical-offset="316" max-vertical-offset="1037">
               <folding>
                 <element signature="e#7#606#0" expanded="true" />
               </folding>
@@ -102,15 +115,15 @@
         <option value="$PROJECT_DIR$/includes/models/users.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/login_form.php" />
         <option value="$PROJECT_DIR$/includes/plugins/localize/main.php" />
-        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php" />
         <option value="$PROJECT_DIR$/includes/controllers/save.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/general.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/pages.php" />
         <option value="$PROJECT_DIR$/includes/controllers/group_update.php" />
         <option value="$PROJECT_DIR$/includes/models/settings.php" />
         <option value="$PROJECT_DIR$/includes/controllers/page_update.php" />
+        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/menus/pages.php" />
+        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php" />
         <option value="$PROJECT_DIR$/includes/models/pages.php" />
       </list>
     </option>
@@ -164,6 +177,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="port" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="port" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="port" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloudburst" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -328,11 +389,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="5" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1411" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="6" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="816" />
@@ -368,11 +424,6 @@
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/player.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="17" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1462" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="10" selection-start="914" selection-end="914" vertical-scroll-proportion="0.6097561" vertical-offset="0" max-vertical-offset="697" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/kill_direct.php">
@@ -596,15 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/general.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="0.21726619" vertical-offset="342" max-vertical-offset="1037">
-          <folding>
-            <element signature="e#7#606#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/controllers/group_update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="71" selection-start="717" selection-end="717" vertical-scroll-proportion="0.48920864" vertical-offset="0" max-vertical-offset="695">
@@ -619,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="355" column="1" selection-start="5022" selection-end="5022" vertical-scroll-proportion="0.0" vertical-offset="4268" max-vertical-offset="6137">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="14" selection-start="3179" selection-end="3179" vertical-scroll-proportion="0.3151079" vertical-offset="1634" max-vertical-offset="3519">
@@ -633,18 +668,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="6" selection-start="2150" selection-end="2150" vertical-scroll-proportion="1.3107914" vertical-offset="75" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="355" column="1" selection-start="5022" selection-end="5022" vertical-scroll-proportion="2.4507627" vertical-offset="4268" max-vertical-offset="6137">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="10" selection-start="914" selection-end="914" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="526" column="30" selection-start="12108" selection-end="12108" vertical-scroll-proportion="0.33287102" vertical-offset="8702" max-vertical-offset="10132">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/pages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="10" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-25.076923" vertical-offset="130" max-vertical-offset="918">
+        <state line="46" column="10" selection-start="1293" selection-end="1293" vertical-scroll-proportion="-25.192308" vertical-offset="127" max-vertical-offset="1207">
           <folding>
             <element signature="e#7#606#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/users.php">
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="6" selection-start="2150" selection-end="2150" vertical-scroll-proportion="1.3107914" vertical-offset="75" max-vertical-offset="2329">
+        <state line="22" column="9" selection-start="823" selection-end="823" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="850">
           <folding />
         </state>
       </provider>
@@ -658,21 +721,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/settings.php">
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/menus/general.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="14" selection-start="919" selection-end="919" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="833">
-          <folding />
+        <state line="39" column="70" selection-start="959" selection-end="1023" vertical-scroll-proportion="-13.346154" vertical-offset="316" max-vertical-offset="1037">
+          <folding>
+            <element signature="e#7#606#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/models/pages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="32" selection-start="4468" selection-end="4468" vertical-scroll-proportion="0.12374101" vertical-offset="2566" max-vertical-offset="4233">
+        <state line="72" column="39" selection-start="1761" selection-end="1761" vertical-scroll-proportion="0.6388489" vertical-offset="542" max-vertical-offset="4233">
           <folding>
-            <marker date="1396833144166" expanded="true" signature="1908:1978" placeholder="SELECT * FRO..." />
-            <marker date="1396833144166" expanded="true" signature="3364:3434" placeholder="INSERT INTO ..." />
-            <marker date="1396833144166" expanded="true" signature="4743:4860" placeholder="UPDATE pages..." />
-            <marker date="1396833144166" expanded="true" signature="5967:6011" placeholder="DELETE FROM ..." />
+            <marker date="1396833640235" expanded="true" signature="1910:1980" placeholder="SELECT * FRO..." />
+            <marker date="1396833640235" expanded="true" signature="3366:3436" placeholder="INSERT INTO ..." />
+            <marker date="1396833640235" expanded="true" signature="4745:4862" placeholder="UPDATE pages..." />
+            <marker date="1396833640235" expanded="true" signature="5969:6013" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>

@@ -10,6 +10,7 @@
         <?php if($settings['debug'] == true){ ?>
             <br />
             <li><a href="/<?php echo $base_dir; ?>/settings/pages">Pages</a></li>
+            <li><a href="/<?php echo $base_dir; ?>/settings/group">Groups</a></li>
             <li><a href="/<?php echo $base_dir; ?>/settings/debug">Debug</a></li>
             <li><a href="/<?php echo $base_dir; ?>/settings/developer">Developer</a></li>
         <?php } ?>
