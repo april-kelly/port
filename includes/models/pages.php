@@ -168,7 +168,7 @@ class pages{
     }
 
     //Change a page
-    public function update_page($name, $path, $div_id, $params){
+    public function update_page($page_id,$name, $path, $div_id, $params){
 
         //Handle empty parameters
         if(empty($name)){
@@ -186,12 +186,12 @@ class pages{
         try{
 
             //Setup Insert
-            $query = "UPDATE pages SET `name` = :name, `path` = :path, `div_id` = :div_id WHERE `page_id` = :page_id `parameters` = :params";
+            $query = "UPDATE pages SET `name` = :name, `path` = :path, `div_id` = :div_id `parameters` = :params WHERE `page_id` = :page_id ";
             $handle= $this->dbc->setup($query);
 
             //Define Parameters
             $parameters = array(
-                'page_id'    => null,
+                'page_id'    => $page_id,
                 'name'       => $name,
                 'path'       => $path,
                 'div_id'     => $div_id,

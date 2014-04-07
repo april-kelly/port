@@ -37,9 +37,17 @@ $path = $_REQUEST['path'];
 $div_id = $_REQUEST['div_id'];
 $parameters = $_REQUEST['parameters'];
 
-$test = $pages->add_page($name, $path, $div_id, $parameters);
 
-$pages->debug->dump();
+if(isset($_REQUEST['Add'])){
+    $pages->add_page($name, $path, $div_id, $parameters);
+}
+
+if(isset($_REQUEST['Update'])){
+    $pages->update_page($name, $path, $div_id, $parameters);
+}
+
+//Debugging dump
+//$pages->debug->dump();
 
 var_dump($test);
 /*

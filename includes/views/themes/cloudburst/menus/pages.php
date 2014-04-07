@@ -46,16 +46,37 @@
     <input type="text" name="parameters" id="parameters" />
     <br />
 
-
-    <input type="submit" value="Add" />
+    <input type="submit" value="Add" id="Add" />
 
     <hr />
+
+
+
 
     <b>Update Page</b><br />
 
-    <input type="submit" value="Update" />
+    <label for="name">name: </label>
+    <input type="text" name="name" id="name" />
+    <br />
+
+    <label for="path">path </label>
+    <input type="text" name="path" id="path" />
+    <br />
+
+    <label for="div_id">div_id</label>
+    <input type="text" name="div_id" id="div_id" />
+    <br />
+
+    <label for="parameters">parameters</label>
+    <input type="text" name="parameters" id="parameters" />
+    <br />
+
+    <input type="submit" value="Update" id="Update" />
 
     <hr />
+
+
+
 
     <b>Delete Page</b><br />
 
