@@ -116,20 +116,22 @@ class pages{
     }
 
     //Add a page
-    public function add_page($name, $path, $div_id){
+    public function add_page($name, $path, $div_id, $params){
+
 
         try{
 
             //Setup Insert
-            $query = "INSERT INTO pages VALUES(:page_id, :name, :path, :div_id)";
+            $query = "INSERT INTO pages VALUES(:page_id, :name, :path, :div_id, :parameters)";
             $handle= $this->dbc->setup($query);
 
             //Define Parameters
             $parameters = array(
-                 'page_id' => null,
-                 'name'    => $name,
-                 'path'    => $path,
-                 'div_id'  => $div_id,
+                 'page_id'    => null,
+                 'name'       => $name,
+                 'path'       => $path,
+                 'div_id'     => $div_id,
+                 'parameters' => $params
             );
 
             //Run Insert
@@ -143,12 +145,12 @@ class pages{
             //Ok, something went wrong, let's handle it
 
             //Let the debugger now about this (if enabled)
-            if(isset($settings['debug']) && $settings["debug"] == true){
+            //if(isset($settings['debug']) && $settings["debug"] == true){
 
                 $this->debug->add_exception($e);
                 $this->debug->add_message('An error was encountered in the pages class, add_page() function.');
 
-            }
+            //}
 
             //Indicate failure by returning false
             return false;

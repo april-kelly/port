@@ -119,15 +119,20 @@ if($settings['plugins'] == true){
 
 //Look up the page
 $page = $pages->lookup($request);
-//var_dump($page);
 
-//Check the user's clearance
-foreach($page as $key => $value){
+//Default authorization to false in case of failure
+$auth = false;
 
-    $auth = $users->clearance_check($_SESSION['user_id'], $value['group_id']);
+if(!(empty($page))){
 
-    if($auth == true){
-        break;
+    //Check the user's clearance against the page's group(s)
+    foreach($page as $key => $value){
+
+        $auth = $users->clearance_check($_SESSION['user_id'], $value['group_id']);
+
+        if($auth == true){
+            break;
+        }
     }
 }
 
