@@ -145,7 +145,7 @@ $group = $page['group_id'];
 ob_start();
 
     //Verify user is cleared to see the requested page
-    if($auth == true || $page == null){
+    if($auth == true){
 
         //Define the file path
         $file = ABSPATH.'includes/views/themes/'.$settings['theme'].'/'.$page['path'];

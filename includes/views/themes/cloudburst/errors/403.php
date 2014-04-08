@@ -26,16 +26,17 @@
 //Send error header
 header($_SERVER['SERVER_PROTOCOL'].'403 Forbidden');
 
+include(ABSPATH.'includes/models/make_readable.php');
 ?>
 
 <h3>403, Forbidden</h3>
 <p>
-    You are unauthorized to access this resource. Sorry about that. <br />
+    You are unauthorized to access this resource.<br />
     <?php
 
         if($settings['noauth_debug'] == true && $settings['debug'] == true){
 
-            echo 'User '.$name.' is not a member of the group '.$page['group_id'];
+            echo '<br /><span class="info"><b>Debug</b>: User '.$name.' is not a member of the group '.$page['group_id'].'.</span>';
 
         }
 

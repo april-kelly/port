@@ -41,7 +41,7 @@ $parameters = $_REQUEST['parameters'];
 var_dump($_REQUEST);
 
 if(isset($_REQUEST['add'])){
-    //$pages->add_page($name, $path, $div_id, $parameters);
+    $pages->add_page($name, $path, $div_id, $parameters);
 
     echo 'is add';
 }

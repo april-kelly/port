@@ -50,7 +50,7 @@
 
     ?>
 
-    <input type="submit" value="Save" />
+    <input type="submit" value="Save" class="button" />
 
 
 </form>

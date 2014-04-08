@@ -46,7 +46,7 @@
     <input type="text" name="parameters" id="parameters" />
     <br />
 
-    <input type="submit" value="add" name="add" id="add" />
+    <input type="submit" value="add" name="add" id="add" class="button" />
 
     <hr />
 
