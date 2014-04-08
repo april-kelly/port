@@ -55,6 +55,10 @@ class settings {
     public $base_dir                                =   'port';          //Installation directory of foundation
     public $url                                     =   '';              //Set in the constructor
 
+    //TV Settings
+    public $tv_ip                                   =   '192.168.1.1';   //IP Address of http tv tuner
+
+
     //Security
     public $noauth_debug                            =   true;            //Displays debugging information upon 403 error
     public $anon                                    =   true;            //Enables anonymous users

@@ -30,20 +30,20 @@
 
     <b>Add Page</b><br />
 
-    <label for="name">name: </label>
-    <input type="text" name="name" id="name" />
+    <label for="add_name">name: </label>
+    <input type="text" name="add_name" id="add_name" />
     <br />
 
-    <label for="path">path </label>
-    <input type="text" name="path" id="path" />
+    <label for="add_path">path </label>
+    <input type="text" name="add_path" id="add_path" />
     <br />
 
-    <label for="div_id">div_id</label>
-    <input type="text" name="div_id" id="div_id" />
+    <label for="add_div_id">div_id</label>
+    <input type="text" name="add_div_id" id="add_div_id" />
     <br />
 
-    <label for="parameters">parameters</label>
-    <input type="text" name="parameters" id="parameters" />
+    <label for="add_parameters">parameters</label>
+    <input type="text" name="add_parameters" id="add_parameters" />
     <br />
 
     <input type="submit" value="add" name="add" id="add" class="button" />

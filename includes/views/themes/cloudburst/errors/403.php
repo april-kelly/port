@@ -29,7 +29,7 @@ header($_SERVER['SERVER_PROTOCOL'].'403 Forbidden');
 include(ABSPATH.'includes/models/make_readable.php');
 ?>
 
-<h3>403, Forbidden</h3>
+<h3>403 Forbidden</h3>
 <p>
     You are unauthorized to access this resource.<br />
     <?php
