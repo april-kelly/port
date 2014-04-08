@@ -228,7 +228,7 @@ For the settings
 }
 
 #settings-nav {
-    float: left;
+    float: right;
     height: inherit;
     padding-right: 10px;
     padding-top: 20px;
@@ -258,8 +258,8 @@ For the settings
 }
 
 #settings label{
-    display: inline;
-    width: 300px;
+    display: inline-block;
+    width: 200px;
     text-align: left;
 }
 #settings input {
