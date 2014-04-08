@@ -28,6 +28,7 @@ class debug{
     //Object Properties
     public $exception_buffer;
     public $message_buffer;
+    public $more = false;
 
     //Constructor
     public function __construct(){
@@ -73,59 +74,82 @@ class debug{
 
         echo count($this->message_buffer).' Message(s) were reported.<br />'."\r\n";
 
-        $i = 0;
-        foreach($this->message_buffer as $message){
+        //Make sure there are messages
+        if(!($this->message_buffer == null)){
 
-            echo '<br />'."\r\n";
-            echo 'Message '.$i.': <br />'."\r\n";
-            echo $message;
-            echo "<br /> \r\n";
-            $i++;
+            $i = 0;
+            foreach($this->message_buffer as $message){
 
-            if(!($i == count($this->message_buffer))){
+                echo '<br />'."\r\n";
+                echo 'Message '.$i.': <br />'."\r\n";
+                echo $message;
+                echo "<br /> \r\n";
+                $i++;
 
-                echo '<hr />';
+                if(!($i == count($this->message_buffer))){
+
+                    echo '<hr />';
+
+                }
 
             }
 
+        }else{
+
+            //Inform the user of a lack of messages (again)
+            echo '<br />"...yay!" -Fluttershy<br />';
+
         }
+
+        echo '<hr />'."\r\n";
 
         echo '<h3>Exception(s): </h3>'."\r\n";
 
         echo count($this->exception_buffer).' Exception(s) were reported.<br />'."\r\n";
 
-        $i = 0;
-        foreach($this->exception_buffer as $exception){
+        //Make sure there are errors
+        if(!($this->exception_buffer == null)){
 
-            echo '<br />'."\r\n";
-            echo 'Exception '.$i.': <br />'."\r\n";
+            $i = 0;
+            foreach($this->exception_buffer as $exception){
 
-            //For pdo errors
-            if(isset($exception->errorInfo[2])){
-                echo $exception->errorInfo[2];
+                echo '<br />'."\r\n";
+                echo 'Exception '.$i.': <br />'."\r\n";
+
+                //For pdo errors
+                if(isset($exception->errorInfo[2])){
+                    echo $exception->errorInfo[2];
+                }
+
+
+                echo "<br /> \r\n";
+                $i++;
+
+                if(!($i == count($this->exception_buffer))){
+
+                    echo '<hr />';
+
+                }
+
             }
 
+        }else{
 
-            echo "<br /> \r\n";
-            $i++;
-
-            if(!($i == count($this->exception_buffer))){
-
-                echo '<hr />';
-
-            }
+            //Inform the user of a lack of exceptions (again)
+            echo '<br />"Sqee!" -Fluttershy<br />';
 
         }
 
-        //Uncomment the following to see a dump of the exceptions
+        //Shows more info if enabled
+        if($this->more == true && !($this->message_buffer == null)){
 
-        /*
-        echo '<pre>'."\r\n";
+            echo '<pre>'."\r\n";
 
-            var_dump($this->exception_buffer);
+                var_dump($this->exception_buffer);
 
-        echo '</pre>'."\r\n";
-        //*/
+            echo '</pre>'."\r\n";
+
+        }
 
 
         echo '<hr />'."\r\n";
@@ -147,12 +171,21 @@ class debug{
 
     }
 
+    //Show more debugging info
+    public function more(){
+
+        //Set the more property to true
+        return $this->more = true;
+
+    }
+
+
     //Destructor
     public function __destruct(){
 
         //Cast properties to null
         $this->exception_buffer = null;
-        $this->message_buffer     = null;
+        $this->message_buffer   = null;
 
     }
 

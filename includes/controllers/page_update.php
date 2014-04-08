@@ -32,27 +32,24 @@ require_once(ABSPATH.'includes/models/pages.php');
 //Setup the pages object
 $pages = new pages;
 
+$page_id = $_REQUEST['page_id'];
 $name = $_REQUEST['name'];
 $path = $_REQUEST['path'];
 $div_id = $_REQUEST['div_id'];
 $parameters = $_REQUEST['parameters'];
 
+var_dump($_REQUEST);
 
-if(isset($_REQUEST['Add'])){
-    $pages->add_page($name, $path, $div_id, $parameters);
+if(isset($_REQUEST['add'])){
+    //$pages->add_page($name, $path, $div_id, $parameters);
+
+    echo 'is add';
 }
 
-if(isset($_REQUEST['Update'])){
-    $pages->update_page($name, $path, $div_id, $parameters);
+if(isset($_REQUEST['update'])){
+    $pages->update_page($page_id,$name, $path, $div_id, $parameters);
 }
 
 //Debugging dump
-//$pages->debug->dump();
-
-var_dump($test);
-/*
- * $page_id
- * $name
- * $path
- * $div_id
- */
+$pages->debug->more();
+$pages->debug->dump();

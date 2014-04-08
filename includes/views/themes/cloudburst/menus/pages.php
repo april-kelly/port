@@ -46,13 +46,13 @@
     <input type="text" name="parameters" id="parameters" />
     <br />
 
-    <input type="submit" value="Add" id="Add" />
+    <input type="submit" value="add" name="add" id="add" />
 
     <hr />
 
 
 
-
+<!--
     <b>Update Page</b><br />
 
     <label for="name">name: </label>
@@ -83,5 +83,5 @@
     <input type="submit" value="Delete" />
 
     <hr />
-
+-->
 </form>
