@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="12" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.95107913" vertical-offset="852" max-vertical-offset="6528">
+            <state line="39" column="25" selection-start="770" selection-end="770" vertical-scroll-proportion="-15.423077" vertical-offset="262" max-vertical-offset="6545">
               <folding />
             </state>
           </provider>
@@ -45,6 +45,15 @@
         <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/player.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="6" selection-start="587" selection-end="587" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="1479">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="26" selection-start="4060" selection-end="4060" vertical-scroll-proportion="0.19280575" vertical-offset="903" max-vertical-offset="1598">
               <folding />
             </state>
           </provider>
@@ -104,11 +113,11 @@
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/errors/403.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/live.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/main.template.php" />
-        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/home.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/nav.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/video.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/player.php" />
         <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css" />
+        <option value="$PROJECT_DIR$/includes/views/themes/cloudburst/home.php" />
       </list>
     </option>
   </component>
@@ -619,23 +628,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="21" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.72805756" vertical-offset="4" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="46" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.4503597" vertical-offset="129" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="51" selection-start="519" selection-end="519" vertical-scroll-proportion="-16.038462" vertical-offset="76" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
@@ -656,7 +651,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="12" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.95107913" vertical-offset="852" max-vertical-offset="6528">
+        <state line="39" column="25" selection-start="770" selection-end="770" vertical-scroll-proportion="-15.423077" vertical-offset="262" max-vertical-offset="6545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="51" selection-start="519" selection-end="519" vertical-scroll-proportion="-16.038462" vertical-offset="76" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/themes/cloudburst/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="26" selection-start="4060" selection-end="4060" vertical-scroll-proportion="0.19280575" vertical-offset="903" max-vertical-offset="1598">
           <folding />
         </state>
       </provider>
