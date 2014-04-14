@@ -34,18 +34,12 @@ $results = $video->fetch_video($_SESSION['video_id']);*/
     }
 </style>-->
 
-<?php
-//if(!(empty($results))){
-?>
 
         <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none"
                data-setup="{}" poster="./includes/views/themes/cloudburst/images/default_poster.png">
-            <source src="./<?php //echo $results['media'][0]['location']; ?>" type='video/mp4' />
+            <source src="/CloudBurst/content/uploads/mlp.mp4" type='video/mp4' />
         </video>
 
-<?php
-//}
-?>
 
 <script>
 

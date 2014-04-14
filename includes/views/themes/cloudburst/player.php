@@ -6,6 +6,7 @@
 
 
 </div>
+<br/>
 <div id="details">
     <p>
         <b>You're watching:</b><br />

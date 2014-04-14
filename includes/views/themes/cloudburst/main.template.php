@@ -30,10 +30,10 @@
         <link href="<?php echo $settings['url']; ?>includes/views/themes/<?php echo $theme->dir_name; ?>/styles/styles.css" rel="stylesheet"/>
 
         <link href="http://localhost/cloudburst/cludes/libraries/jquery/video-js.css" rel="stylesheet">
-        <link rel="stylesheet" href="/includes/libraries/bxslider/jquery.bxslider.css">
-        <script src="http://localhost/cloudburst/cludes/libraries/jquery/jquery-1.10.2.min.js"></script>
-        <script src="http://localhost/cloudburst/cludes/libraries/video-js/video.js"></script>
-        <script src="http://localhost/cloudburst/cludes/libraries/bxslider/jquery.bxslider.min.js"></script>
+        <link rel="stylesheet" href="/cloudburst/includes/libraries/bxslider/jquery.bxslider.css">
+        <script src="http://localhost/cloudburst/includes/libraries/jquery/jquery-1.10.2.min.js"></script>
+        <script src="http://localhost/cloudburst/includes/libraries/video-js/video.js"></script>
+        <script src="http://localhost/cloudburst/includes/libraries/bxslider/jquery.bxslider.min.js"></script>
 
         <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
         <script src="http://vjs.zencdn.net/c/video.js"></script>
