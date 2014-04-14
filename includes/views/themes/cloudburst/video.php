@@ -33,6 +33,7 @@ $results = $video->fetch_video($_SESSION['video_id']);*/
         height: auto;
     }
 </style>-->
+
 <?php
 //if(!(empty($results))){
 ?>
@@ -55,7 +56,7 @@ $results = $video->fetch_video($_SESSION['video_id']);*/
         // Store the video object
         var myPlayer = this;
         // Make up an aspect ratio
-        var aspectRatio = 720/1024;
+        var aspectRatio = 1536/2731;
 
         function resizeVideoJS(){
             var width = document.getElementById("container").offsetWidth;//document.getElementById("container").parentElement.offsetWidth;

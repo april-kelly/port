@@ -260,7 +260,7 @@ class db{
             //Prepare the query
             $handle = $this->dbc->prepare('SELECT * FROM `cloudburst`.`media` WHERE `index` = :id');
 
-            //Let the excute function know that we have defined a query
+            //Let the execute function know that we have defined a query
             $this->prepared = true;
 
             //Return the handle
@@ -283,7 +283,7 @@ class db{
             //Prepare the query
             $handle = $this->dbc->prepare($query);
 
-            //Let the excute function know that we have defined a query
+            //Let the execute function know that we have defined a query
             $this->prepared = true;
 
             //Return the handle

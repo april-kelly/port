@@ -186,8 +186,9 @@ class pages{
         try{
 
             //Setup Insert
-            $query = "UPDATE pages SET `name` = :name, `path` = :path, `div_id` = :div_id `parameters` = :params WHERE `page_id` = :page_id ";
-            $handle= $this->dbc->setup($query);
+            $query = "UPDATE `pages` SET `name` = :name, `path` = :path, `div_id` = :div_id, `parameters` = :params WHERE `page_id` = :page_id ";
+            $handle = $this->dbc->setup($query);
+
 
             //Define Parameters
             $parameters = array(
@@ -199,10 +200,10 @@ class pages{
             );
 
             //Run Insert
-            $pages = $this->dbc->fetch_assoc($handle, $parameters);
+            $test = $this->dbc->execute($handle, $parameters);//$pages = $this->dbc->fetch_assoc($handle, $parameters);
 
             //If everything worked, let's return true
-            return true;
+            return $test;
 
         }catch(PDOException $e){
 
@@ -213,6 +214,38 @@ class pages{
 
                 $this->debug->add_exception($e);
                 $this->debug->add_message('An error was encountered in the pages class, update_page() function.');
+
+            }
+
+            //Indicate failure by returning false
+            return false;
+
+        }
+
+    }
+
+    //Fetch a list of pages
+    public function pages_list(){
+
+        try{
+
+            //Setup Insert
+            $query = "SELECT * FROM pages";
+            $handle= $this->dbc->setup($query);
+            $pages = $this->dbc->fetch_assoc($handle, array());//array('page_id' => $page_id));
+
+            //If everything worked, let's return true
+            return $pages;
+
+        }catch(PDOException $e){
+
+            //Ok, something went wrong, let's handle it
+
+            //Let the debugger now about this (if enabled)
+            if($this->settings["debug"] == true){
+
+                $this->debug->add_exception($e);
+                $this->debug->add_message('An error was encountered in the pages class, delete_page() function.');
 
             }
 

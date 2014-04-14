@@ -27,7 +27,7 @@
 <h3>Page Settings</h3>
 
 <form action="/<?php echo $base_dir; ?>/includes/controllers/page_update.php" method="post">
-
+<!--
     <b>Add Page</b><br />
 
     <label for="add_name">name: </label>
@@ -48,32 +48,65 @@
 
     <input type="submit" value="add" name="add" id="add" class="button" />
 
+    <hr />-->
+
+    <b>Update Page</b><br />
+
+    <label for="update_page_id">Page</label>
+    <select name="update_page_id">
+        <?php
+
+        //Echo out a list of pages
+        $pages = new pages;
+
+        //$pages->update_page('21', 'catz', 'asdf','adsfasdf','asdfasdfa');
+
+        //$pages->debug->more();
+        //$pages->debug->dump();
+
+        var_dump($pages->pages_list());
+
+        $list = $pages->pages_list();
+
+
+        foreach($list as $key => $value){
+
+            //echo '<br />'."\r\n";
+            //var_dump($value);
+            echo '<option value="'.$value['page_id'].'">'.$value['name'].'</option>';
+
+        }
+
+        ?>
+    </select>
+    <br />
+
+
+    <label for="update_name">name: </label>
+    <input type="text" name="update_name" id="update_name" />
+    <br />
+
+    <label for="update_path">path </label>
+    <input type="text" name="update_path" id="update_path" />
+    <br />
+
+    <label for="update_div_id">div_id</label>
+    <input type="text" name="update_div_id" id="update_div_id" />
+    <br />
+
+    <label for="update_parameters">parameters</label>
+    <input type="text" name="update_parameters" id="update_parameters" />
+    <br />
+
+    <input type="submit" value="update" id="update" />
+
     <hr />
+
+
 
 
 
 <!--
-    <b>Update Page</b><br />
-
-    <label for="name">name: </label>
-    <input type="text" name="name" id="name" />
-    <br />
-
-    <label for="path">path </label>
-    <input type="text" name="path" id="path" />
-    <br />
-
-    <label for="div_id">div_id</label>
-    <input type="text" name="div_id" id="div_id" />
-    <br />
-
-    <label for="parameters">parameters</label>
-    <input type="text" name="parameters" id="parameters" />
-    <br />
-
-    <input type="submit" value="Update" id="Update" />
-
-    <hr />
 
 
 

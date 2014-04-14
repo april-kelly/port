@@ -36,7 +36,17 @@ include(ABSPATH.'includes/models/make_readable.php');
 
         if($settings['noauth_debug'] == true && $settings['debug'] == true){
 
-            echo '<br /><span class="info"><b>Debug</b>: User '.$name.' is not a member of the group '.$page['group_id'].'.</span>';
+            echo '<br /><span class="info"><b>Debug</b>: User '.$name.' is not a member of the group ';
+            if($page['group_id'] == null){
+
+                echo '[Non existent]';
+
+            }else{
+
+                echo $page['group_id'];
+
+            }
+                echo '.</span>';
 
         }
 

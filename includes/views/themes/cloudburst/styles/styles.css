@@ -110,6 +110,11 @@ For the live tv page
     height: 450px;
 }
 
+video {
+    width: 45%;
+    height: 45%;
+}
+
 .listings {
     width: 300px;
     height: 450px;
