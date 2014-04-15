@@ -61,7 +61,8 @@ if(isset($_REQUEST['save'])){
 //Reset settings
 if(isset($_REQUEST['reset'])){
 
-    $settings = (array) $set;
+    //Reset the settings
+    $set->reset();
 
 }
 

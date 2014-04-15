@@ -122,4 +122,15 @@ class settings {
 
     }
 
+    //Reset Settings
+    public function reset(){
+
+        //Fetch current defaults
+        $settings = (array) $this;
+
+        //Save the defaults
+        $this->update($settings);
+
+    }
+
 }
