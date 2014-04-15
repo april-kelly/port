@@ -41,16 +41,28 @@ $set = new settings();
 //Fetch the settings
 $settings = $set->fetch();
 
-//Update the settings
-foreach($_REQUEST as $key => $value){
+//Save settings
+if(isset($_REQUEST['save'])){
 
-    //Ensure the key exists
-    if(isset($settings[$key])){
+    //Update the settings
+    foreach($_REQUEST as $key => $value){
 
-        //Key exists, update it
-        $settings[$key] = $value;
+        //Ensure the key exists
+        if(isset($settings[$key])){
 
+            //Key exists, update it
+            $settings[$key] = $value;
+
+        }
     }
+
+}
+
+//Reset settings
+if(isset($_REQUEST['reset'])){
+
+    $settings = (array) $set;
+
 }
 
 //Update the settings

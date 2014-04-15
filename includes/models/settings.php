@@ -54,6 +54,7 @@ class settings {
     public $protocol                                =   'http://';       //Server Protocol such as http:// https:// or gopher://
     public $base_dir                                =   'port';          //Installation directory of foundation
     public $url                                     =   '';              //Set in the constructor
+    public $default_page                            =   'library';       //Default page to send the user to
 
     //TV Settings
     public $tv_ip                                   =   '192.168.1.1';   //IP Address of http tv tuner

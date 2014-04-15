@@ -82,7 +82,7 @@ $pages = new pages($dbc);
     if(isset($_REQUEST['p']) && !(empty($_REQUEST['p']))){
         $request = $_REQUEST['p'];
     }else{
-        $request = 'home';
+        $request = $settings['default_page'];
     }
 
 //Check for login
