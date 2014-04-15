@@ -37,7 +37,7 @@ For the home page:
     width: 96%;
     min-height: 90%;
     border: 1px solid #bababa;
-    padding-bottom: 20px;
+    /*padding: 20px;
     /*margin-left: auto;
     margin-right: auto;
     color: #bbb;*/
@@ -182,8 +182,11 @@ For the nav bar:
 
 }
 
-#test {
-    padding-left: 100px;
+#lib_container{
+    margin-top: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 75px;
 }
 
 #nav li:hover{

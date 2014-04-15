@@ -1,59 +1,38 @@
 
-<div id="test">
-    <h2>My Library</h2>
-    <ul class="bxsliderCar">
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%201"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%202"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%203"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%204"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%205"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%206"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%207"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%208"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%209"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%2010"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%2011"></li>
-    </ul>
-    <ul class="bxsliderCar">
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%201"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%202"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%203"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%204"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%205"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%206"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%207"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%208"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%209"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%2010"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%2011"></li>
-    </ul>
-    <ul class="bxsliderCar">
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%201"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%202"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%203"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%204"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%205"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%206"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%207"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%208"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%209"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%2010"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%2011"></li>
-    </ul>
-    <ul class="bxsliderCar">
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%201"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%202"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%203"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%204"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%205"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%206"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%207"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%208"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%209"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%2010"></li>
-        <li class="slide"><img src="http://placehold.it/200x230&text=Show%2011"></li>
-    </ul>
-</div>
+<div id="lib_container">
+
+<h2>My Library</h2>
+
+    <?php
+
+    $library = array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);
+
+    $i = 0;
+    $count = count($library);
+    //Generate the sliders
+    foreach($library as $title){
+
+        $count--;
+        //Beginning of the slider
+        if($i == 0 && !($count == 0)){
+            echo '<ul class="bxsliderCar">';
+        }
+
+        echo '<li class="slide"><img src="http://placehold.it/200x230&text=Show%20'.$i.'"></li>'."\r\n";
+
+        $i++;
+        //End of the slider
+        if($i == 10 || $count == 0){
+            echo '</ul>'."\r\n";
+            $i = 0;
+        }
+
+    }
+
+
+    ?>
+
+    </div>
 
 
 <script>
