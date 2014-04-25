@@ -130,7 +130,7 @@ class settings {
 
         //Save the defaults
         $this->update($settings);
-
+        
     }
 
 }

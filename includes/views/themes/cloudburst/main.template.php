@@ -19,6 +19,10 @@
         $parameters = false;
     }
 
+    //Fetch Alerts
+    $alerts   = $alert->fetch_alerts();
+    $notices  = $alert->fetch_notices();
+
 
 ?>
 <html>
@@ -64,15 +68,31 @@
         ?>
 
         <?php
-            if(isset($message)){
-        ?>
-        <div id="message">
+        if(count($alerts) > 0){
+            ?>
+            <div id="alert">
 
-            <?php echo $message; ?>
+                <?php
 
-        </div>
+                $count = count($alerts);
+                foreach($alerts as $alert){
+
+                    echo $alert;
+
+
+                    if($count > 1){
+                        echo '<br /><br />';
+                    }
+                    $count--;
+
+                }
+
+
+                ?>
+
+            </div>
         <?php
-            }
+        }
         ?>
 
         <div id="<?php echo $page['div_id']; ?>">
@@ -92,6 +112,27 @@
 
             ?>
         </div>
+
+
+        <?php
+        if(count($notices) > 0){
+            ?>
+            <div id="notices">
+
+                <?php
+
+                foreach($notices as $notice){
+
+                    echo $notice;
+
+                }
+
+                ?>
+
+            </div>
+        <?php
+        }
+        ?>
 
 
     </body>

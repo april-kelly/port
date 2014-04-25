@@ -33,6 +33,7 @@ require_once(ABSPATH.'includes/models/users.php');
 require_once(ABSPATH.'includes/models/groups.php');
 require_once(ABSPATH.'includes/models/pages.php');
 require_once(ABSPATH.'includes/models/debug.php');
+require_once(ABSPATH.'includes/models/alert.php');
 
 //Secured io (Deprecated)
 //require_once(ABSPATH.'includes/controllers/secured_io.php');
@@ -45,6 +46,7 @@ if(!(isset($_SESSION))){
 //Setup the non database requiring system classes
 $debug = new debug;
 $set   = new settings;
+$alert = new alerts;
 
 //Setup the database
 $dbc   = new db;
@@ -200,7 +202,10 @@ ob_start();
     //Time Debugging
     $end_time = microtime(true);
     $time = $end_time - $start_time;
-    $footer_message = '<b>Info:</b> Page built in: '.$time.' sec.';
+    //$alert->add_alert('Info','Page built in: '.$time.' sec.', '1');
+    $alert->add_alert('Alert', 'This is an alert!');
+    $alert->add_alert('Error', 'This is a critical alert!', 1);
+    $alert->add_notice('Notice', 'This is a notice.');
 
     //Include the view
     include_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/main.template.php');

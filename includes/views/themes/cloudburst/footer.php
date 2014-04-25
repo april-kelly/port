@@ -25,8 +25,3 @@
 
 
 echo '<p>(C) Copyright '.date('Y').' William C. Kelly</p>';
-
-//For optional footer messages
-if(isset($footer_message)){
-    echo $footer_message;
-}

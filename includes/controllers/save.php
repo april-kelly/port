@@ -62,7 +62,7 @@ if(isset($_REQUEST['save'])){
 if(isset($_REQUEST['reset'])){
 
     //Reset the settings
-    $set->reset();
+    //$set->reset();
 
 }
 
