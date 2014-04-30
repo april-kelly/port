@@ -117,15 +117,23 @@
         <?php
         if(count($notices) > 0){
             ?>
-            <div id="notices">
+            <div id="notice">
 
                 <?php
 
+                $count = count($notices);
                 foreach($notices as $notice){
 
                     echo $notice;
 
+
+                    if($count > 1){
+                        echo '<br />';
+                    }
+                    $count--;
+
                 }
+
 
                 ?>
 

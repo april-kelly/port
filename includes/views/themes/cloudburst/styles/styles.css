@@ -43,7 +43,27 @@ For the home page:
     color: #bbb;*/
 }
 
+#install{
+    color: #888;
+    text-align: left;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dbdbdb;
+    width: 96%;
+    min-height: 80%;
+    border: 1px solid #bababa;
+    text-align: center;
+    font-family: segoe ui, arial;
+    padding: 10px;
+}
 
+#install-output{
+    max-height: 70%;
+    text-align: left;
+    font: monospace;
+    overflow-y: auto;
+}
 
 /*
 For the video player page

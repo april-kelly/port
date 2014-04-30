@@ -202,10 +202,7 @@ ob_start();
     //Time Debugging
     $end_time = microtime(true);
     $time = $end_time - $start_time;
-    //$alert->add_alert('Info','Page built in: '.$time.' sec.', '1');
-    $alert->add_alert('Alert', 'This is an alert!');
-    $alert->add_alert('Error', 'This is a critical alert!', 1);
-    $alert->add_notice('Notice', 'This is a notice.');
+    $alert->add_notice('Info','Page built in: '.$time.' sec.', '1');
 
     //Include the view
     include_once(ABSPATH.'includes/views/themes/'.$settings['theme'].'/main.template.php');
