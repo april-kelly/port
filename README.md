@@ -1,10 +1,7 @@
-Foundation
+Cloudburst - Foundation port
 ==========
 
-Foundation provides a basic foundation to build a php web application off of. It includes a pdo based crud, support for
-cell based access control, basic templating and plugin support. Foundation is designed to be secure against multiple
-attack vectors, including first and second order sql injection. This however by now means is a guarantee of security and I
-do not recommend using this in a production environment.
+Cloudburst ported to the foundation framework. Contains a more recent version of foundation (some changes have not been back ported).
 
 =========
 
